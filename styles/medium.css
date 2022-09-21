@@ -1,0 +1,34 @@
+@media only screen and (min-width: 27.5em) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .banner {
+        display: grid;
+        align-items: center;
+    }
+    
+    .banner img {
+        grid-column: 1 / 2;
+        margin: 1em 1em 1em 1.5em;
+        grid-row: 1 / 2;
+    }
+
+    .banner h1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        margin: 1em 1em 0 0;
+    }
+
+    #top_hr {
+        margin: -1.25em 0 1em 0;
+    }
+}
