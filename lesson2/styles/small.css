@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1.25rem auto;
+    max-width: 480px;
+    font-family: Oswald, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.banner, footer {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 25px 2px black;
+    text-align: center;
+}
+
+footer p {
+    padding: 1rem 0 0 0;
+    margin: 1rem 0 1rem 0;
+}
+
+#last-modif {
+    color: gold;
+    margin: -1rem 0 1rem 0;
+    padding: 0 0 1rem 0;
+}
+
