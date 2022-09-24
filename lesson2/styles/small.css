@@ -2,10 +2,15 @@
 
 body {
     font-size: 16px;
-    line-height: 1.5;
-    margin: 1.25rem auto;
-    max-width: 480px;
     font-family: Oswald, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 390px;
+    margin: 1rem auto;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,23 +18,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner, footer {
-    background-color: blue;
+    background-color: #08124A;
     color: white;
-    border-radius: 15px;
-    box-shadow: 2px 2px 25px 2px black;
     text-align: center;
 }
 
+.banner h1 {
+    padding: 1rem;
+    margin: 0;
+}
 
+.banner h2 {
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
+}
+
+article {
+    background-color: #C0C4C4;
+    margin: 0 .5rem 1rem .5rem;
+    padding: .5rem;
+}
+
+h3 {
+    background-color: #313630;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    margin: 1rem .5rem 0 .5rem;
+    padding: .5rem;
+}
+
+h4 {
+    margin: 0 0 .5rem 0;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 1rem;
+}
 
 footer p {
-    padding: 1rem 0 0 0;
-    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+    margin: 0;
 }
 
 #last-modif {
     color: gold;
-    margin: -1rem 0 1rem 0;
-    padding: 0 0 1rem 0;
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
 }
 
