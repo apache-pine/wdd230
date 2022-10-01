@@ -1,27 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
 /* https://coolors.co/052639-117fa6-91d9f3-7e9339-afc841 */
 
+:root {
+    --primary-color: #052639;
+    --secondary-color: #117FA6;
+    --accent1-color: #91D9F3;
+    --accent2-color: #7E9339;
+    --accent3-color: #AFC841;
+
+    --heading-font: "Roboto", Arial, sans-serif;
+    --paragraph-font: "Oswald", Helvetica, sans-serif;
+}
 
 body {
     font-size: 16px;
-    font-family: Oswald, Helvetica, sans-serif;
+    font-family: var(--paragraph-font);
+}
+
+main {
+    max-width: 780px;
+    margin: 1rem auto;
+    line-height: 1.5;
 }
 
 .banner, footer {
-    background-color: #052639;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: var(--heading-font);
 }
-
-/* 
-main {
-    
-} 
-*/
 
 .banner h1 {
     padding: 1rem;
@@ -38,7 +48,7 @@ main {
 }
 
 nav {
-    background-color: #117FA6;
+    background-color: var(--secondary-color);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -53,12 +63,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #AFC841;
+    background-color: var(--accent3-color);
     color: black;
 }
 
 h3 {
-    background-color: #91D9F3;
+    background-color: var(--accent1-color);
     padding: .5rem 1rem;
 }
 
@@ -72,6 +82,43 @@ p {
 
 #homepage-logo {
     padding: 1rem;
+}
+
+.colors {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    overflow-x: auto;
+    font-size: .75rem;
+}
+
+.colors th {
+    background-color: #999;
+}
+  
+.colors td {
+    width: auto;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+.accent3 {
+    background-color: var(--accent3-color);
 }
 
 footer p {
