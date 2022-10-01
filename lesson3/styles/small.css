@@ -100,7 +100,8 @@ p {
 }
 
 .colors th {
-    background-color: #999;
+    background-color: rgb(76, 76, 76);
+    color: white;
 }
   
 .colors td {
