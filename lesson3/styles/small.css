@@ -72,6 +72,11 @@ h3 {
     padding: .5rem 1rem;
 }
 
+h4 {
+    background-color: var(--accent3-color);
+    padding: .5rem 1rem;
+}
+
 p {
     padding: .5rem;
 }
@@ -103,10 +108,12 @@ p {
 
 .primary {
     background-color: var(--primary-color);
+    color: white;
 }
 
 .secondary {
     background-color: var(--secondary-color);
+    color: white;
 }
 
 .accent1 {
@@ -130,4 +137,30 @@ footer p {
     color: gold;
     padding: 0 1rem 1rem 1rem;
     margin: 0;
+}
+
+
+table {
+	border: 1px solid #eae7e2;
+	max-width: 90%;
+	margin: .5rem auto;
+}
+
+th {
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	vertical-align:middle;
+	background-color: #eae7e2;
+	padding: 0.5rem 1rem;
+	border-right: 1px solid #fff;
+}
+
+td {
+	padding: .5rem;
+	border: 1px solid #eae7e2;
+}
+
+td ul, td p {
+	padding-left: 1rem;
 }
