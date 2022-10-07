@@ -1,5 +1,9 @@
 @media only screen and (min-width: 60em) {
+    body {
+        font-size: 20px;
+    }
     main {
+        max-width: 80%;
         grid-template-columns: 1fr 1fr 1fr;
     }
     main section:nth-child(3) {
