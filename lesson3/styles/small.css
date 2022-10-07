@@ -82,6 +82,14 @@ p {
     padding: .5rem;
 }
 
+.tableImg p {
+    margin: 0;
+}
+
+.tableImg p img {
+    width: 100px;
+}
+
 #website-logo-section h3 {
     margin-bottom: 0;
 }

@@ -2,4 +2,8 @@
     nav {
         padding: 0 10%;
     }
+
+    .tableImg p img {
+        width: 150px;
+    }
 }
