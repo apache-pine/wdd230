@@ -1,10 +1,12 @@
-const current_year = new Date().getFullYear();
+const now = new Date();
 
-document.querySelector(".current-year").textContent = current_year;
+const currentYear = now.getFullYear();
 
-let last_modif = new Date(document.lastModified);
+document.querySelector(".currentYear").textContent = currentYear;
 
-document.querySelector("#last-modif").textContent = `Last Updated: ${last_modif.toLocaleString()}`;
+let lastModif = new Date(document.lastModified);
+
+document.querySelector("#lastModif").textContent = `Last Updated: ${lastModif.toLocaleString()}`;
 
 let hamBtn = document.getElementById("hamBtn");
 
@@ -16,3 +18,9 @@ function toggleMenu() {
 };
 
 hamBtn.onclick = toggleMenu;
+
+const currentDate = document.querySelector(".currentDate");
+
+const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+
+currentDate.innerHTML = `<em>${fullDate}</em>`;
