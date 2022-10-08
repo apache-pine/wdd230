@@ -123,6 +123,30 @@ nav ul li a:hover {
     color: black;
 }
 
+main div {
+    background-color: #ccc;
+    height: 7rem;
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+main section {
+    background-color: #ccc;
+    height: 14rem;
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+main section article {
+    background-color: #ccc;
+    height: 3rem;
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 1rem;
+    margin: 1rem;
+}
+
 #footerSiteInfo {
     display: flex;
     text-align: center;
