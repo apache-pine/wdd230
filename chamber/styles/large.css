@@ -8,6 +8,25 @@ nav {
     padding: 0 10%;
 }
 
+#hamBtn {
+    display: none;
+}
 
+nav ul#primaryNav {
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+#footerSiteName {
+    grid-row: 2 / 3;
+}
+
+#footerAddr {
+    grid-row: 3 / 5;
+}
 
 }
