@@ -1,5 +1,9 @@
 @media only screen and (min-width: 35rem) {
 
+body {
+    font-size: 18px;
+}
+
 #hamBtn {
     display: none;
 }
