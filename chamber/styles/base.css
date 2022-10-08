@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+/* https://coolors.co/052639-117fa6-91d9f3-7e9339-afc841 */
+
+:root {
+    --primary-color: #052639;
+    --secondary-color: #117FA6;
+    --accent1-color: #91D9F3;
+    --accent2-color: #7E9339;
+    --accent3-color: #AFC841;
+
+    --heading-font: "Roboto", Arial, sans-serif;
+    --paragraph-font: "Oswald", Helvetica, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+}
+
+main {
+    max-width: 780px;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+.banner, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+.banner h1 {
+    padding: 1rem;
+    margin: 0;
+}
