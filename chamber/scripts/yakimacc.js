@@ -1,16 +1,16 @@
 const now = new Date();
 
-const currentYear = now.getFullYear();
+const current_year = now.getFullYear();
 
-document.querySelector(".currentYear").textContent = currentYear;
+document.querySelector(".current-year").textContent = current_year;
 
-let lastModif = new Date(document.lastModified);
+let last_modif = new Date(document.lastModified);
 
-document.querySelector("#lastModif").textContent = `Last Updated: ${lastModif.toLocaleString()}`;
+document.querySelector("#last-modif").textContent = `Last Updated: ${last_modif.toLocaleString()}`;
 
-let hamBtn = document.getElementById("hamBtn");
+let ham_btn = document.getElementById("ham-btn");
 
-let primaryNav = document.getElementById("primaryNav");
+let primary_nav = document.getElementById("primary-nav");
 
 function toggleMenu() {
     primaryNav.classList.toggle("open")

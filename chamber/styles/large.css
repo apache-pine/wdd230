@@ -8,11 +8,11 @@ nav {
     padding: 0 10%;
 }
 
-#hamBtn {
+#ham-btn {
     display: none;
 }
 
-nav ul#primaryNav {
+nav ul#primary-nav {
     display: flex;
     text-align: center;
 }
@@ -21,11 +21,11 @@ nav ul li {
     flex: 1 1 auto;
 }
 
-#footerSiteName {
+#footer-site-name {
     grid-row: 2 / 3;
 }
 
-#footerAddr {
+#footer-addr {
     grid-row: 3 / 5;
 }
 
