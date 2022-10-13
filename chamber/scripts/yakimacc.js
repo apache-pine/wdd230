@@ -13,14 +13,14 @@ let ham_btn = document.getElementById("ham-btn");
 let primary_nav = document.getElementById("primary-nav");
 
 function toggleMenu() {
-    primaryNav.classList.toggle("open")
-    hamBtn.classList.toggle("open")
+    primary_nav.classList.toggle("open")
+    ham_btn.classList.toggle("open")
 };
 
-hamBtn.onclick = toggleMenu;
+ham_btn.onclick = toggleMenu;
 
-const currentDate = document.querySelector(".currentDate");
+const current_date = document.querySelector(".current-date");
 
-const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+const full_date = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 
-currentDate.innerHTML = `<em>${fullDate}</em>`;
+current_date.innerHTML = `<em>${full_date}</em>`;
