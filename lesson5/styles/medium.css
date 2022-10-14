@@ -1,0 +1,46 @@
+@media only screen and (min-width: 35rem) {
+
+body {
+    font-size: 18px;
+}
+
+#footer-site-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+}
+
+#footer-site-info picture {
+    grid-column: 1 / 2;
+    grid-row: span 6;
+}
+
+#footer-site-name {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    text-align: left;
+}
+
+#footer-addr {
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+    padding: 0;
+    text-align: left;
+}
+
+#footer-email {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#footer-num {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#footer-loc {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+}

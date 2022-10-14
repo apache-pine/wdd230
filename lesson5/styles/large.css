@@ -1,0 +1,32 @@
+@media only screen and (min-width: 60em) {
+
+body {
+    font-size: 20px;
+}
+
+nav {
+    padding: 0 10%;
+}
+
+#ham-btn {
+    display: none;
+}
+
+nav ul#primary-nav {
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+#footer-site-name {
+    grid-row: 2 / 3;
+}
+
+#footer-addr {
+    grid-row: 3 / 5;
+}
+
+}
