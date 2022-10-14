@@ -38,6 +38,18 @@ header {
     grid-column-gap: 1rem;
 }
 
+.banner {
+    display: none;
+    text-align: center;
+    padding: .25rem 2rem;
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+}
+
+.banner.open {
+    display: block;
+}
+
 .logo-header {
     justify-self: center;
     align-self: center;
@@ -129,28 +141,148 @@ nav ul li a:hover {
     color: black;
 }
 
-main div, article {
-    background-color: #ccc;
-    height: 7rem;
-    border: 2px solid rgba(0,0,0,0.5);
-    padding: 1rem;
-    margin: 1rem;
+.hero-div {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.5);
+    height: 200px;
 }
 
-main section {
-    background-color: #ccc;
-    height: 14rem;
-    border: 2px solid rgba(0,0,0,0.5);
-    padding: 1rem;
-    margin: 1rem;
+.hero-div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hero-div h2 {
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px 13px;
+    border: rgba(0,0,0,0.5);
+}
+
+.hero-div button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.def-div {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 1rem auto;
+    box-shadow: 0 0 25px 2px black;
+}
+
+.event {
+    padding: .5rem 3rem;
+}
+
+.def-div h3 {
+    font-size: 1.5rem;
+    color: var(--accent3-color);
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.event p {
+    margin: 0;
+}
+
+.event a {
+    font-size: .8rem;
+    color: var(--accent3-color);
+    text-decoration: none;
+}
+
+.subheading {
+    font-size: 1.25rem;
+    padding: .75rem;
+}
+
+.weather {
+    display: grid;
+    width: 80%;
+}
+
+.weather p {
+    margin: 0;
+}
+
+.weather h3 {
+    grid-column: span 2;
+}
+
+.weather picture {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.weather-icon {
+    width: 10rem;
+}
+
+.temp {
+    grid-column: 2 / 3;
+    align-self: center;
+    font-size: 2rem;
+}
+
+.condition {
+    grid-column: 2 / 3;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    align-self: center;
+}
+
+.wind {
+    grid-column: span 2;
+    padding-bottom: 1rem;
+}
+
+.news {
+    padding: 0 3rem 1rem 3rem;
+}
+
+.spotlight-sec {
+    padding: .5rem;
 }
 
 .spotlight {
-    background-color: #ccc;
-    height: 3rem;
-    border: 2px solid rgba(0,0,0,0.5);
-    padding: 1rem;
-    margin: 1rem;
+    max-width: 90%;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 1rem auto;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 20px 1px #aaa;
+}
+
+.spotlight img {
+    max-width: 40%;
+    margin: .5rem;
+}
+
+.spotlight2 img {
+    background-color: white;
+    padding: 2.5rem 1rem;
+}
+
+.spotlight-tagline {
+    font-style: italic;
+}
+
+.spotlight a {
+    color: white;
+    text-decoration: none;
 }
 
 #footer-site-info {
@@ -187,4 +319,6 @@ main section {
 
 .true-footer {
     text-align: center;
+    padding: 1rem;
+    margin: 0;
 }
