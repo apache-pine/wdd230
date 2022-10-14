@@ -2,6 +2,10 @@ const now = new Date();
 
 const current_year = now.getFullYear();
 
+const current_day = now.getDay();
+
+const the_hour = now.getHours();
+
 document.querySelector(".current-year").textContent = current_year;
 
 const last_modif = new Date(document.lastModified);
@@ -19,17 +23,19 @@ function toggleMenu() {
 
 ham_btn.onclick = toggleMenu;
 
+const banner = document.querySelector(".banner");
+
+if (current_day == 1 || current_day == 2){
+    banner.classList.toggle("open")
+};
+
 const current_date = document.querySelector(".current-date");
 
 const full_date = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 
 current_date.innerHTML = `<em>${full_date}</em>`;
 
-const current_day = now.getDay();
-
 const weather_link = "https://api.openweathermap.org/data/2.5/weather?q=yakima,wa,usa&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial"
-
-let the_hour = now.getHours();
 
 function getWeather(weather){
 	if(weather == "Haze"){
