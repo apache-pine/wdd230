@@ -129,7 +129,7 @@ nav ul li a:hover {
     color: black;
 }
 
-main div {
+main div, article {
     background-color: #ccc;
     height: 7rem;
     border: 2px solid rgba(0,0,0,0.5);
@@ -145,7 +145,7 @@ main section {
     margin: 1rem;
 }
 
-main section article {
+.spotlight {
     background-color: #ccc;
     height: 3rem;
     border: 2px solid rgba(0,0,0,0.5);
