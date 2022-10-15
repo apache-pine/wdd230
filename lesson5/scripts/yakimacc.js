@@ -91,3 +91,15 @@ weather_request.onload = function() {
 }
 weather_request.send();
 
+const viewport = window.matchMedia("(min-width: 60em)");
+
+function change_src(viewport) {
+    if (viewport.matches) {
+        document.querySelector(".hero-div-img").src = "images/yakima-valley.jpg"
+    } else {
+        document.querySelector(".hero-div-img").src = "images/yakima-valley-thin.jpg"
+    }
+};
+
+change_src(viewport);
+viewport.addEventListener("change", change_src);

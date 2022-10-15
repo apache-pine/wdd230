@@ -289,6 +289,10 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+.spotlight3 {
+    display: none;
+}
+
 .join-us {
     display: none;
 }
