@@ -38,7 +38,7 @@ current_date.innerHTML = `<em>${full_date}</em>`;
 const weather_link = "https://api.openweathermap.org/data/2.5/weather?q=yakima,wa,usa&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial"
 
 function getWeather(weather){
-	if(weather == "Haze"){
+	if(weather == "Few Clouds"){
         if(the_hour<18 && the_hour>6)
             return "images/weather-icons/animated/cloudy-day-1.svg"
         else
@@ -59,10 +59,10 @@ function getWeather(weather){
         else
             return "images/weather-icons/animated/night.svg"
     }
-    else if(weather == "Smoke"){
+    else if(weather == "Snow"){
         return "images/weather-icons/animated/snowy-6.svg"
     }
-    else if(weather == "Drizzle"){
+    else if(weather == "Drizzle" || weather == "Shower Rain"){
         return "images/weather-icons/animated/rainy-7.svg"
     }
     else if(weather == "Thunderstorm"){
