@@ -44,7 +44,7 @@ function getWeather(weather){
         else
             return "images/weather-icons/animated/cloudy-night-1.svg"
     }
-    else if(weather == "Clouds"){
+    else if(weather == "Overcast Clouds"){
         return "images/weather-icons/animated/cloudy.svg"
     }
     else if(weather == "Rain"){
