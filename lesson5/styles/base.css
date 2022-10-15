@@ -270,6 +270,11 @@ nav ul li a:hover {
     box-shadow: 0 0 20px 1px #aaa;
 }
 
+.spotlight h3 {
+    background-color: var(--primary-color);
+    padding: .3rem;
+}
+
 .spotlight img {
     max-width: 40%;
     margin: .5rem;

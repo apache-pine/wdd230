@@ -40,6 +40,7 @@ main {
 .hero-div {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
+    margin: 0 0 1rem 0;
 }
 
 .spotlight-sec {
@@ -49,8 +50,13 @@ main {
     font-size: .8rem;
 }
 
+.spotlight1 {
+    margin-top: 0;
+}
+
 .spotlight3 {
     display: block;
+    margin-bottom: 0;
 }
 
 .spotlight3 img {
