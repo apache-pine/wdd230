@@ -37,40 +37,9 @@ current_date.innerHTML = `<em>${full_date}</em>`;
 
 const weather_link = "https://api.openweathermap.org/data/2.5/weather?q=yakima,wa,usa&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial";
 
-function getWeather(weather){
-	if(weather == "Few Clouds"){
-        if(the_hour<18 && the_hour>6)
-            return "images/weather-icons/animated/cloudy-day-1.svg"
-        else
-            return "images/weather-icons/animated/cloudy-night-1.svg"
-    }
-    else if(weather == "Overcast Clouds"){
-        return "images/weather-icons/animated/cloudy.svg"
-    }
-    else if(weather == "Rain"){
-        return "images/weather-icons/animated/rainy-6.svg"
-    }
-    else if(weather == "Mist"){
-        return "images/weather-icons/animated/snowy-4.svg"
-    }
-    else if(weather == "Clear Sky"){
-        if(the_hour<18 && the_hour>6)
-            return "images/weather-icons/animated/day.svg"
-        else
-            return "images/weather-icons/animated/night.svg"
-    }
-    else if(weather == "Snow"){
-        return "images/weather-icons/animated/snowy-6.svg"
-    }
-    else if(weather == "Drizzle" || weather == "Shower Rain"){
-        return "images/weather-icons/animated/rainy-7.svg"
-    }
-    else if(weather == "Thunderstorm"){
-        return "images/weather-icons/animated/thunder.svg"
-    }
-    else{
-        return "images/weather-icons/animated/weather.svg"
-    }
+function getWeatherIcon(icon){
+	let icon_url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    return icon_url;
 }
 
 const weather_request = new XMLHttpRequest();
@@ -81,10 +50,9 @@ weather_request.onload = function() {
     let condition = obj.weather[0].description;
     condition = condition.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
     let wind = "Wind Speed: "+obj.wind.speed+" MPH";
+    let icon = obj.weather[0].icon;
 
-    console.log(temp+", "+condition+", "+wind)
-
-    document.querySelector(".weather-icon").src = getWeather(condition);
+    document.querySelector(".weather-icon").src = getWeatherIcon(icon);
     document.querySelector(".temp").textContent = temp;
     document.querySelector(".condition").textContent = condition;
     document.querySelector(".wind").textContent = wind;
