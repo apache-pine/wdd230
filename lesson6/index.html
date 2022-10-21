@@ -26,7 +26,7 @@
       <picture>
         <img
           class="logo-header"
-          src="images/sunny-valley.jpg"
+          src="images/sunny-valley.webp"
           alt="sun shining over a field, clipart"
         />
       </picture>
@@ -35,8 +35,15 @@
         <div>Chamber of Commerce</div>
       </section>
       <div id="social">
-        <img src="images/facebook-logo.png" alt="Facebook Logo" />
-        <img src="images/youtube-logo.png" alt="YouTube Logo" />
+        <a href="facebook.com" target="_blank"
+          ><img
+            src="images/facebook-logo.webp"
+            alt="Facebook Logo"
+            width="32px"
+        /></a>
+        <a href="youtube.com" target="_blank"
+          ><img src="images/youtube-logo.webp" alt="YouTube Logo" width="32px"
+        /></a>
       </div>
       <button id="ham-btn"><span>&#9776;</span><span>X</span></button>
       <div class="current-date"></div>
@@ -53,10 +60,18 @@
     <main>
       <div class="hero-div">
         <picture>
+          <source
+            media="(max-width: 34.9rem)"
+            srcset="images/wdd230-small.webp"
+          />
+          <source
+            media="(max-width: 59.9rem)"
+            srcset="images/wdd230-medium.webp"
+          />
           <img
             class="hero-div-img"
-            src="images/yakima-valley-thin.jpg"
-            alt="picture overlooking the Yakima valley"
+            src="images/wdd230-large.webp"
+            alt="people in an interview"
           />
         </picture>
         <h2>Welcome to Yakima</h2>
@@ -80,9 +95,10 @@
             alt="An icon depicting the current weather"
           />
         </picture>
-        <p class="temp"></p>
+        <p class="temp">42</p>
         <p class="condition"></p>
-        <p class="wind"></p>
+        <p class="wind-speed">10</p>
+        <p class="wind-chill"></p>
       </div>
       <article class="def-div news">
         <h3>News Release</h3>
@@ -98,7 +114,7 @@
           <h3>Yakima Coffee Company</h3>
           <picture>
             <img
-              src="images/yakima-coffee-co.jpg"
+              src="images/yakima-coffee-co.webp"
               alt="Yakima Coffee Company logo"
             />
           </picture>
@@ -135,7 +151,7 @@
           <h3>Creekside Physical Therapy</h3>
           <picture>
             <img
-              src="images/creekside-pt.jpg"
+              src="images/creekside-pt.webp"
               alt="drone shot of the Creekside PT building"
             />
           </picture>
@@ -160,7 +176,7 @@
         <picture>
           <img
             class="logo-footer"
-            src="images/sunny-valley.jpg"
+            src="images/sunny-valley.webp"
             alt="sun shining over a field, clipart"
           />
         </picture>
@@ -182,5 +198,6 @@
       </div>
     </footer>
     <script src="scripts/yakimacc.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>
