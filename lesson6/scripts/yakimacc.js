@@ -46,7 +46,7 @@ async function getWeather(weather_link) {
   }
 }
 function getWeatherIcon(icon){
-	let icon_url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+	let icon_url = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     return icon_url;
 };
 
