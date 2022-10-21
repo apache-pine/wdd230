@@ -214,43 +214,40 @@ nav ul li a:hover {
 }
 
 .weather {
-    display: grid;
-    width: 100%;
-    padding: 0;
+    width: 90%;
+    padding: 5%;
 }
 
 .weather p {
     margin: 0;
 }
 
-.weather h3 {
-    grid-column: span 2;
-}
-
-.weather picture {
-    grid-column: 1 / 2;
-}
-
 .weather-icon {
-    max-width: 100%;
+    max-width: 120%;
 }
 
 .temp {
-    grid-column: 2 / 3;
-    align-self: center;
     font-size: 200%;
 }
 
-.condition {
-    grid-column: 1 / 3;
-    font-size: 120%;
-    padding-bottom: .5rem;
-    align-self: center;
+.temp-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.wind-speed, .wind-chill {
-    grid-column: span 2;
-    padding-bottom: 1rem;
+.condition {
+    font-size: 120%;
+    padding-bottom: .5rem;
+}
+
+.wind-speed {
+    padding-top: 1rem;
+}
+
+hr {
+    border-top: 2px solid rgba(0,0,0,0.5);
 }
 
 .news {
