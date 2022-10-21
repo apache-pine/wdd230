@@ -54,13 +54,11 @@ main {
 
 .event {
     grid-column: 1 / 4;
+    margin-right: 2rem;
 }
 
 .weather {
     grid-column: 4 / 6;
-    width: 75%;
-    padding-right: 2rem;
-    margin-right: 0;
 }
 
 #footer-site-info {
