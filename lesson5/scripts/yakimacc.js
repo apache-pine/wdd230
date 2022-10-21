@@ -37,27 +37,35 @@ current_date.innerHTML = `<em>${full_date}</em>`;
 
 const weather_link = "https://api.openweathermap.org/data/2.5/weather?q=yakima,wa,usa&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial";
 
+let results = null;
+async function getWeather(weather_link) {
+  const response = await fetch(weather_link);
+  if (response.ok) {
+    const data = await response.json();
+    doStuff(data);
+  }
+}
 function getWeatherIcon(icon){
 	let icon_url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
     return icon_url;
-}
+};
 
-const weather_request = new XMLHttpRequest();
-weather_request.open("GET",weather_link,true);
-weather_request.onload = function() {
-    let obj = JSON.parse(this.response);
-    let temp = obj.main.temp+"°F";
-    let condition = obj.weather[0].description;
+function doStuff(data) {
+    results = data;
+    let condition = results.weather[0].description;
     condition = condition.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-    let wind = "Wind Speed: "+obj.wind.speed+" MPH";
-    let icon = obj.weather[0].icon;
+    let icon = results.weather[0].icon;
+    let weatherIcon = getWeatherIcon(icon);
+    let temp = results.main.temp+"°F";
+    let windSpeed = "Wind Speed: "+results.wind.speed+" MPH";
 
-    document.querySelector(".weather-icon").src = getWeatherIcon(icon);
-    document.querySelector(".temp").textContent = temp;
+    document.querySelector(".weather-icon").src = weatherIcon;
     document.querySelector(".condition").textContent = condition;
-    document.querySelector(".wind").textContent = wind;
-}
-weather_request.send();
+    document.querySelector(".temp").textContent = temp;
+    document.querySelector(".wind").textContent = windSpeed;
+  };
+
+getWeather(weather_link);
 
 const viewport = window.matchMedia("(min-width: 60em)");
 
