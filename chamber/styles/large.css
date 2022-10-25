@@ -29,4 +29,72 @@ nav ul li {
     grid-row: 3 / 5;
 }
 
+main {
+    grid-template-columns: repeat(4, 1fr) 3rem;
+    max-width: 1440px;
+    grid-gap: 1.5rem;
+}
+
+.def-div {
+    margin: 0;
+}
+
+.event {
+    grid-column: 1 / 2;
+    grid-row-start: 1;
+    padding: .5rem 1rem;
+    height: 250px;
+}
+
+.hero-div {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    margin: 0 0 1rem 0;
+    height: 570px;
+}
+
+.spotlight-sec {
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+    height: 800px;
+    display: block;
+    font-size: .8rem;
+}
+
+.spotlight1 {
+    margin-top: 0;
+}
+
+.spotlight3 {
+    display: block;
+    margin-bottom: 0;
+}
+
+.spotlight {
+    max-width: 100%;
+    padding: 0 0 .5rem 0;
+    height: 230px;
+}
+
+.weather {
+    grid-column: 1 / 2;
+    grid-row-start: 2;
+    margin: 0 auto;
+    height: 300px;
+    padding: 0 90px;
+}
+
+.join-us {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 1rem;
+    height: 150px;
+}
+
+.news {
+    grid-column: 2 / 4;
+    grid-row-start: 3;
+    padding: 1rem;
+}
+
 }

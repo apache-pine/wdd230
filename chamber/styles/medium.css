@@ -4,6 +4,53 @@ body {
     font-size: 18px;
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.def-div {
+    grid-column: 1 / 6;
+}
+
+.hero-div {
+    grid-column: 1 / 6;
+    height: 300px;
+}
+
+.news {
+    grid-row: 2 / 3;
+    margin-top: 1rem;
+    height: 150px;
+}
+
+.spotlight-sec {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.spotlight {
+    padding: .5rem;
+    height: 150px;
+}
+
+.join-us {
+    display: block;
+    grid-row: 4 / 6;
+    padding: .5rem 3rem;
+}
+
+.event {
+    grid-column: 1 / 4;
+    margin-right: 2rem;
+}
+
+.weather {
+    grid-column: 4 / 6;
+}
+
 #footer-site-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

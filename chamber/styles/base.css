@@ -188,3 +188,7 @@ main section {
 .true-footer {
     text-align: center;
 }
+
+.spotlight3, .join-us {
+    display: none;
+}
