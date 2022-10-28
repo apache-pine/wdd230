@@ -110,4 +110,8 @@ main {
     grid-row: 4 / 5;
 }
 
+.dis-image:hover {
+    box-shadow: 0px 0px 100px 1px black;
+}
+
 }

@@ -342,3 +342,44 @@ hr {
     padding: 1rem;
     margin: 0;
 }
+
+/* Start of discover page */
+
+.discover {
+    display: flex;
+    flex-direction: column;
+}
+
+img[data-src] {
+    min-width: 50px;
+    min-height: 50px;
+    filter: blur(0.2em);
+}
+
+.dis-image {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    filter: blur(0em);
+    transition: filter 1s;
+    border-radius: 1rem;
+    transition: all .8s;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.discover section {
+    background-color: var(--accent2-color);
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px black;
+    text-align: center;
+}
+
+.discover h2 {
+    margin-top: 0;
+}
+
+.dis-image:hover {
+    scale: 1.01;
+    box-shadow: 0px 0px 50px 1px black;
+}

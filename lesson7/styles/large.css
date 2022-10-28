@@ -124,4 +124,22 @@ main {
     grid-row: 3 / 5;
 }
 
+.dis-image {
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.discover h2 {
+    padding-top: 2rem;
+}
+
 }
