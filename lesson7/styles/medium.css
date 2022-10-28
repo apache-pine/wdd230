@@ -9,6 +9,16 @@ main {
     grid-template-columns: repeat(5, 1fr);
 }
 
+#social {
+    flex-direction: row;
+}
+
+#social img {
+    padding: .5rem;
+    height: 40px;
+    width: auto;
+}
+
 .def-div {
     grid-column: 1 / 6;
 }
