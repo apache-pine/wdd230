@@ -50,19 +50,31 @@ function getWeatherIcon(icon){
     return icon_url;
 };
 
+function calcWindChill(t, s) {
+  if (t <= 50 && s > 3){
+      const wind_chill = Math.round(
+          35.74 + 0.6215 * t - 35.75 * s **0.16 + 0.4275 * t * s ** 0.16);
+      return wind_chill;
+  } else {
+      return "N/A";
+  };
+};
+
 function doStuff(data) {
     results = data;
     let condition = results.weather[0].description;
     condition = condition.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
     let icon = results.weather[0].icon;
     let weatherIcon = getWeatherIcon(icon);
-    let temp = results.main.temp+"°F";
-    let windSpeed = "Wind Speed: "+results.wind.speed+" MPH";
+    let temp = results.main.temp;
+    let windSpeed = results.wind.speed;
 
     document.querySelector(".weather-icon").src = weatherIcon;
     document.querySelector(".condition").textContent = condition;
-    // document.querySelector(".temp").textContent = temp;
-    // document.querySelector(".wind-speed").textContent = windSpeed;
+    document.querySelector(".temp").textContent = temp+"°F";
+    document.querySelector(".wind-speed").textContent = "Wind Speed: "+windSpeed+" MPH";
+    document.querySelector(".wind-chill").textContent = 
+    "Wind Chill: "+calcWindChill(temp, windSpeed)+"°F";
   };
 
 getWeather(weather_link);
@@ -98,3 +110,17 @@ if ("IntersectionObserver" in window) {
     loadImages(img);
   });
 };
+
+const visits_display = document.querySelector(".last-visit");
+
+let current_visit = Date.now();
+
+let last_visit = Number(window.localStorage.getItem("last-visit-ls"));
+
+let last_visit_date = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(new Date(last_visit));
+
+let time_since_last = Math.round((current_visit - last_visit) / (86400000));
+
+visits_display.textContent = "The last time you visited this page was "+last_visit_date+", which was "+time_since_last+" days ago. Welcome back!";
+
+localStorage.setItem("last-visit-ls", current_visit)
