@@ -132,14 +132,20 @@ main {
 
 .left {
     float: left;
+    margin-right: 1.5rem;
 }
 
 .right {
     float: right;
+    margin-left: 1.5rem;
 }
 
 .discover h2 {
     padding-top: 2rem;
+}
+
+.discover p {
+    padding: 0 1rem;
 }
 
 }
