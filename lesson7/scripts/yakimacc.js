@@ -121,6 +121,10 @@ let last_visit_date = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).form
 
 let time_since_last = Math.round((current_visit - last_visit) / (86400000));
 
-visits_display.textContent = "The last time you visited this page was "+last_visit_date+", which was "+time_since_last+" days ago. Welcome back!";
+if (last_visit !== 0) {
+  visits_display.textContent = "The last time you visited this page was "+last_visit_date+", which was "+time_since_last+" days ago. Welcome back!";
+} else {
+  visits_display.textContent = "This is your first time visiting this page!"
+};
 
 localStorage.setItem("last-visit-ls", current_visit)
