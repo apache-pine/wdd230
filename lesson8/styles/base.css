@@ -1,0 +1,380 @@
+/* https://coolors.co/052639-117fa6-91d9f3-7e9339-afc841 */
+
+:root {
+    --primary-color: #052639;
+    --secondary-color: #117FA6;
+    --accent1-color: #91D9F3;
+    --accent2-color: #7E9339;
+    --accent3-color: #AFC841;
+
+    --heading-font: "Roboto", Arial, sans-serif;
+    --paragraph-font: "Oswald", Helvetica, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+}
+
+main {
+    max-width: 780px;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+button {
+    background-color: var(--secondary-color);
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1rem;
+}
+
+.banner {
+    display: none;
+    text-align: center;
+    padding: .25rem 2rem;
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+}
+
+.banner.open {
+    display: block;
+}
+
+.logo-header {
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    height: auto;
+    width: 80%;
+    max-width: 100px;
+}
+
+.site-name {
+    grid-column: 2 / 4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.site-name h1, div {
+    padding: 0;
+    margin: 0;
+}
+
+#social {
+    grid-column: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+
+.current-date {
+    grid-column: span 5;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: .7rem;
+    margin: 0 1rem 1rem 1rem;
+    border: 2px solid var(--accent1-color);
+    text-align: center;
+}
+
+nav {
+    grid-column: span 5;
+}
+
+#ham-btn {
+    border: 1px solid white;
+    font-size: 2rem;
+    width: 42px;
+    height: 42px;
+    justify-self: center;
+    align-self: center;
+    padding: 0;
+}
+
+#ham-btn span:nth-child(1) {
+    display: block;
+}
+
+#ham-btn span:nth-child(2) {
+    display: none;
+}
+
+#ham-btn.open span:nth-child(1) {
+    display: none;
+}
+
+#ham-btn.open span:nth-child(2) {
+    display: block;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li a:hover {
+    background-color: var(--accent3-color);
+    color: black;
+}
+
+.hero-div {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.5);
+    height: 200px;
+}
+
+.hero-div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.hero-div h2 {
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px 13px;
+    border: rgba(0,0,0,0.5);
+}
+
+.hero-div button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.def-div {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 1rem auto;
+    box-shadow: 0 0 25px 2px black;
+}
+
+.event {
+    padding: .5rem 3rem;
+}
+
+.def-div h3 {
+    font-size: 1.5rem;
+    color: var(--accent3-color);
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.event p {
+    margin: 0;
+}
+
+.event a {
+    font-size: .8rem;
+    color: var(--accent3-color);
+    text-decoration: none;
+}
+
+.subheading {
+    font-size: 1.25rem;
+    padding: .75rem;
+}
+
+.weather {
+    width: 90%;
+    padding: 5%;
+}
+
+.weather p {
+    margin: 0;
+}
+
+.weather-icon {
+    height: auto;
+    max-width: 120%;
+}
+
+.temp {
+    font-size: 200%;
+}
+
+.temp-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.condition {
+    font-size: 120%;
+    padding-bottom: .5rem;
+}
+
+.wind-speed {
+    padding-top: 1rem;
+}
+
+hr {
+    border-top: 2px solid rgba(0,0,0,0.5);
+}
+
+.news {
+    padding: 0 3rem 1rem 3rem;
+}
+
+.spotlight-sec {
+    padding: .5rem;
+}
+
+.spotlight {
+    max-width: 90%;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 1rem auto;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 20px 1px #aaa;
+}
+
+.spotlight h3 {
+    background-color: var(--primary-color);
+    padding: .3rem;
+}
+
+.spotlight img {
+    height: auto;
+    max-width: 40%;
+    margin: .5rem;
+}
+
+.spotlight2 img {
+    background-color: white;
+    padding: 2.5rem 1rem;
+}
+
+.spotlight-tagline {
+    font-style: italic;
+}
+
+.spotlight a {
+    color: white;
+    text-decoration: none;
+}
+
+.spotlight3 {
+    display: none;
+}
+
+.join-us {
+    display: none;
+}
+
+#footer-site-info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#footer-site-info p {
+    margin: 0.2rem;
+}
+
+.logo-footer {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    height: auto;
+    width: 80%;
+    max-width: 100px;
+}
+
+#footer-site-name {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: .3rem;
+}
+
+#footer-addr {
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+#footer-loc a {
+    text-decoration: none;
+    color: white;
+}
+
+.true-footer {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Start of discover page */
+
+.discover {
+    display: flex;
+    flex-direction: column;
+}
+
+img[data-src] {
+    min-width: 50px;
+    min-height: 50px;
+    filter: blur(0.2em);
+}
+
+.dis-image {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    filter: blur(0em);
+    transition: filter 1s;
+    border-radius: 1rem;
+    transition: all .8s;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.discover section {
+    background-color: var(--accent2-color);
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px black;
+    text-align: center;
+}
+
+.discover h2 {
+    margin-top: 0;
+}

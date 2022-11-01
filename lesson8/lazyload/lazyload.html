@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Loading Images</title>
+    <meta
+      name="description"
+      content="A page made for practicing and demonstrating lazy 
+        loading images."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="styles/lazyload.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lazy Loading Images</h1>
+    </header>
+    <main>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="https://placekitten.com/300/400"
+          alt="image of kitten"
+          width="300"
+          height="400"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="https://picsum.photos/300/400"
+          alt="random image"
+          width="300"
+          height="400"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="https://placedog.net/300/400"
+          alt="image of dog"
+          width="300"
+          height="400"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="https://placeimg.com/300/400"
+          alt="random image"
+          width="300"
+          height="400"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="https://loremflickr.com/300/400"
+          alt="random image"
+          width="300"
+          height="400"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="https://baconmockup.com/300/400"
+          alt="image of meat"
+          width="300"
+          height="400"
+        />
+      </picture>
+    </main>
+    <footer>
+      <div>
+        <p class="footer">
+          &copy;<span class="current-year"></span> Yakima Chamber | Kylar
+          Sorensen | WDD 230 Project | <span id="last-modif"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+  </body>
+</html>
