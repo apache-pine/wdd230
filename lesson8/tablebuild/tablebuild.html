@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Build</title>
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="shortcut icon" href="images/sunny-valley.ico" />
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="styles/tablecss.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML Table Build</h1>
+    </header>
+    <main>
+      <table>
+        <caption>
+          Table 1: Wasatch Sales
+        </caption>
+        <thead>
+          <tr>
+            <th colspan="2" scope="colgroup">Sales</th>
+          </tr>
+          <tr>
+            <th scope="col">Month</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>July</td>
+            <td>3,000</td>
+          </tr>
+          <tr>
+            <td>August</td>
+            <td class="highlight">8,000</td>
+          </tr>
+          <tr>
+            <td>September</td>
+            <td>4,000</td>
+          </tr>
+          <tr>
+            <td>October</td>
+            <td>3,000</td>
+          </tr>
+          <tr>
+            <td>November</td>
+            <td>2,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>
+        &copy; <span class="current-year"></span> | Kylar Sorensen | Washington
+      </p>
+      <p id="last-modif"></p>
+    </footer>
+    <script src="scripts/tablebuildjs.js"></script>
+  </body>
+</html>
