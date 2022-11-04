@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yakima Chamber of Commerce - Home</title>
+    <title>Yakima Chamber of Commerce - Join</title>
     <meta
       name="description"
       content="The Yakima Chamber of Commerce promotes pride in our diverse communities through positive, active leadership aimed at creating a cohesive, successful business climate in our city."
@@ -68,7 +68,47 @@
     <div class="banner">
       <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
-    <main></main>
+    <main>
+      <form method="get" action="thankyou.html">
+        <label for="first-name"
+          >First Name:
+          <input
+            type="text"
+            name="first-name"
+            placeholder="First Name"
+            required
+        /></label>
+        <label for="last-name"
+          >Last Name:
+          <input type="text" name="last-name" placeholder="Last Name" required
+        /></label>
+        <label for="biz-title"
+          >Business Position/Title:
+          <input
+            type="text"
+            name="biz-title"
+            pattern="[A-Za-z- ]"
+            placeholder="i.e. Owner"
+            minlength="7"
+        /></label>
+        <label for="email"
+          >Email:
+          <input
+            type="email"
+            name="email"
+            placeholder="user@email.com"
+            required
+        /></label>
+        <label for="phone"
+          >Phone:
+          <input type="tel" name="phone" placeholder="(###) ###-####" required
+        /></label>
+        <label for="biz-name"
+          >Business Name/Title: <input type="text" name="biz-name" required
+        /></label>
+        <label for=""></label>
+      </form>
+    </main>
     <footer>
       <div id="footer-site-info">
         <picture>

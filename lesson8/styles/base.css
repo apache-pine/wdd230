@@ -378,3 +378,8 @@ img[data-src] {
 .discover h2 {
     margin-top: 0;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
