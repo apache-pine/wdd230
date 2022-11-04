@@ -35,6 +35,8 @@ const full_date = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(n
 
 current_date.innerHTML = `<em>${full_date}</em>`;
 
+document.querySelector("#sub-date").value = full_date;
+
 const weather_link = "https://api.openweathermap.org/data/2.5/weather?q=yakima,wa,usa&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial";
 
 let results = null;
@@ -128,3 +130,10 @@ if (last_visit !== 0) {
 };
 
 localStorage.setItem("last-visit-ls", current_visit)
+
+function selectResponse() {
+	const s = document.querySelector('#selected');
+	const sel = document.querySelector('#select-mem');
+	s.style.display = "block";
+	s.textContent = sel.value;
+};

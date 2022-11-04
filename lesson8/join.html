@@ -68,46 +68,122 @@
     <div class="banner">
       <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
-    <main>
+    <main class="form-main">
       <form method="get" action="thankyou.html">
-        <label for="first-name"
-          >First Name:
-          <input
-            type="text"
-            name="first-name"
-            placeholder="First Name"
-            required
-        /></label>
-        <label for="last-name"
-          >Last Name:
-          <input type="text" name="last-name" placeholder="Last Name" required
-        /></label>
-        <label for="biz-title"
-          >Business Position/Title:
-          <input
-            type="text"
-            name="biz-title"
-            pattern="[A-Za-z- ]"
-            placeholder="i.e. Owner"
-            minlength="7"
-        /></label>
-        <label for="email"
-          >Email:
-          <input
-            type="email"
-            name="email"
-            placeholder="user@email.com"
-            required
-        /></label>
-        <label for="phone"
-          >Phone:
-          <input type="tel" name="phone" placeholder="(###) ###-####" required
-        /></label>
-        <label for="biz-name"
-          >Business Name/Title: <input type="text" name="biz-name" required
-        /></label>
-        <label for=""></label>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="first-name" class="top"
+            >First Name* <input type="text" name="first-name" required
+          /></label>
+          <label for="last-name" class="top"
+            >Last Name* <input type="text" name="last-name" required /></label
+          ><label for="email" class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="user@email.com"
+              required
+          /></label>
+          <label for="phone" class="top"
+            >Phone*
+            <input type="tel" name="phone" placeholder="1235551234" required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Business Information</legend>
+          <label for="biz-title" class="top"
+            >Business Position/Title
+            <input
+              type="text"
+              name="biz-title"
+              pattern="[A-Za-z- ]"
+              placeholder="i.e. Owner"
+              minlength="7"
+          /></label>
+          <label for="biz-name" class="top"
+            >Business Name*
+            <input
+              type="text"
+              name="biz-name"
+              placeholder="Company Inc."
+              required
+          /></label>
+          <label for="biz=desc" class="top"
+            >Business description
+            <textarea
+              name="biz-desc"
+              placeholder="Please describe your business here..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership Level</legend>
+          <div class="selection">
+            <label class="sbs"
+              ><input type="radio" name="membership-level" value="np" /> NP
+              Membership</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="membership-level" value="bronze" />
+              Bronze Membership</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="membership-level" value="silver" />
+              Silver Membership</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="membership-level" value="gold" /> Gold
+              Membership</label
+            >
+          </div>
+        </fieldset>
+        <input type="hidden" name="date-submitted" value="" id="sub-date" />
+        <input
+          type="submit"
+          name="sub-button"
+          value="Join the Chamber"
+          class="form-button"
+        />
       </form>
+      <aside class="mem-desc">
+        <div class="np-aside">
+          <h2>NP Membership Benefits - No Fee</h2>
+          <p>
+            This membership level is designed for non-profit organizations. A
+            package designed to help non-profits raise awareness and get their
+            names out to the public.
+          </p>
+        </div>
+        <div class="bronze-aside">
+          <h2>Bronze Membership Benefits - $400</h2>
+          <p>
+            Designed for the small start-up or entrepreneur seeking visibility,
+            growth and awareness while making new connections. Get involved,
+            market your business and build relationships.
+          </p>
+        </div>
+        <div class="silver-aside">
+          <h2>Silver Membership Benefits - $1000</h2>
+          <p>
+            Establish your business as a community supporter as you grow.
+            Promote multiple branches and services, increasing visibility by
+            showing support of Chamber programs with sponsorship allocation in
+            membership.
+          </p>
+        </div>
+        <div class="gold-aside">
+          <h2>Gold Membership Benefits - $2500</h2>
+          <p>
+            Build on your business reputation as a community influencer. You and
+            your business will interact at the highest level of leadership and
+            visibility in the Yakima Chamber. Affect change, establish policy,
+            and contribute to the growth and development of Yakima. Businesses
+            and their executives investing at this top level are widely
+            recognized for their vision and leadership.
+          </p>
+        </div>
+      </aside>
     </main>
     <footer>
       <div id="footer-site-info">

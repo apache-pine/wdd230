@@ -42,7 +42,7 @@ nav ul li {
     flex: 1 1 auto;
 }
 
-main {
+.home-main {
     grid-template-columns: repeat(4, 1fr) 3rem;
     max-width: 1440px;
     grid-gap: 1.5rem;
@@ -140,12 +140,36 @@ main {
     margin-left: 1.5rem;
 }
 
+.discover {
+    max-width: 1440px;
+}
+
 .discover h2 {
     padding-top: 2rem;
 }
 
 .discover p {
     padding: 0 1rem;
+}
+
+.form-main {
+    grid-template-columns: 3fr 2fr;
+}
+
+form label.sbs {
+    padding: .3rem 0;
+}
+
+.form-main {
+    max-width: 1440px;
+}
+
+.mem-desc h2 {
+    font-size: 1.5rem;
+}
+
+.mem-desc p {
+    font-size: 1rem;
 }
 
 }

@@ -1,10 +1,21 @@
 @media only screen and (min-width: 35rem) {
 
+:root {
+    --primary-color: #052639;
+    --secondary-color: #117FA6;
+    --accent1-color: #91D9F3;
+    --accent2-color: #7E9339;
+    --accent3-color: #AFC841;
+
+    --heading-font: "Roboto", Arial, sans-serif;
+    --paragraph-font: "Oswald", Helvetica, sans-serif;
+}
+
 body {
     font-size: 18px;
 }
 
-main {
+.home-main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -113,6 +124,37 @@ main {
 .dis-image:hover {
     scale: 1.01;
     box-shadow: 0px 0px 75px 1px black;
+}
+
+form input.form-button {
+    width: 83%;
+}
+
+.form-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mem-desc {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    grid-column: 2 / 3;
+    height: fit-content;
+    align-self: flex-end;
+}
+
+.mem-desc h2 {
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+.mem-desc p {
+    font-size: .75rem;
+    margin-top: 0;
 }
 
 }
