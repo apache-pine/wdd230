@@ -1,39 +1,39 @@
 const now = new Date();
 
-const current_year = now.getFullYear();
+const currentYear = now.getFullYear();
 
-const current_day = now.getDay();
+const currentDay = now.getDay();
 
-const the_hour = now.getHours();
+const theHour = now.getHours();
 
-document.querySelector(".current-year").textContent = current_year;
+document.querySelector(".current-year").textContent = currentYear;
 
-const last_modif = new Date(document.lastModified);
+const lastModif = new Date(document.lastModified);
 
-document.querySelector("#last-modif").textContent = `Last Updated: ${last_modif.toLocaleString()}`;
+document.querySelector("#last-modif").textContent = `Last Updated: ${lastModif.toLocaleString()}`;
 
-const ham_btn = document.getElementById("ham-btn");
+const hamBtn = document.getElementById("ham-btn");
 
-const primary_nav = document.getElementById("primary-nav");
+const primaryNav = document.getElementById("primary-nav");
 
 function toggleMenu() {
-    primary_nav.classList.toggle("open")
-    ham_btn.classList.toggle("open")
+    primaryNav.classList.toggle("open")
+    hamBtn.classList.toggle("open")
 };
 
-ham_btn.onclick = toggleMenu;
+hamBtn.onclick = toggleMenu;
 
 const banner = document.querySelector(".banner");
 
-if (current_day == 1 || current_day == 2){
+if (currentDay == 1 || currentDay == 2){
     banner.classList.toggle("open")
 };
 
-const current_date = document.querySelector(".current-date");
+const currentDate = document.querySelector(".current-date");
 
-const full_date = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 
-current_date.innerHTML = `<em>${full_date}</em>`;
+currentDate.innerHTML = `<em>${fullDate}</em>`;
 
 const imgOptions = {
   threshold: 0,
@@ -66,20 +66,27 @@ if ("IntersectionObserver" in window) {
   });
 };
 
-const visits_display = document.querySelector(".last-visit");
+const visitsDisplay = document.querySelector(".last-visit");
 
-let current_visit = Date.now();
+let currentVisit = Date.now();
 
-let last_visit = Number(window.localStorage.getItem("last-visit-ls"));
+let lastVisit = Number(window.localStorage.getItem("last-visit-ls"));
 
-let last_visit_date = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(new Date(last_visit));
+let lastVisitDate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(new Date(lastVisit));
 
-let time_since_last = Math.round((current_visit - last_visit) / (86400000));
+let timeSinceLast = Math.round((currentVisit - lastVisit) / (86400000));
 
-if (last_visit !== 0) {
-  visits_display.textContent = "The last time you visited this page was "+last_visit_date+", which was "+time_since_last+" days ago. Welcome back!";
+if (lastVisit !== 0) {
+  visitsDisplay.textContent = "The last time you visited this page was "+lastVisitDate+", which was "+timeSinceLast+" days ago. Welcome back!";
 } else {
-  visits_display.textContent = "This is your first time visiting this page!"
+  visitsDisplay.textContent = "This is your first time visiting this page!"
 };
 
-localStorage.setItem("last-visit-ls", current_visit)
+localStorage.setItem("last-visit-ls", currentVisit)
+
+function selectResponse() {
+	const s = document.querySelector('#selected');
+	const sel = document.querySelector('#select-mem');
+	s.style.display = "block";
+	s.textContent = sel.value;
+};

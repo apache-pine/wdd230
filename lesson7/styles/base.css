@@ -372,9 +372,9 @@ img[data-src] {
     margin: 1rem;
     padding: 1rem;
     box-shadow: 1px 1px 10px black;
-    text-align: center;
 }
 
 .discover h2 {
     margin-top: 0;
+    text-align: center;
 }
