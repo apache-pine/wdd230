@@ -1,0 +1,94 @@
+{
+    "businesses" : [
+        {
+            "id" : "1",
+            "name" : "Yakima Coffee Company",
+            "address" : "3106 Tieton Dr",
+            "phone" : "(509) 452-3004)",
+            "website" : "https://www.facebook.com/yakimacoffeeco/",
+            "image_src" : "yakima-coffee-co.webp",
+            "membership_level" : "Gold",
+            "slogan" : "The original drive thru espresso bar in Yakima"
+        },
+        {
+            "id" : "2",
+            "name" : "Pacific Vascular - Yakima",
+            "address" : "3902 Creekside Loop, Suite 105",
+            "phone" : "(509) 249-5735",
+            "website" : "https://pacificvascular.com/pv_location/pacific-vascular-yakima/",
+            "image_src" : "pv-logo.webp",
+            "membership_level" : "Silver",
+            "slogan" : "Specialists in Vascular Diagnostic Ultrasound"
+        },
+        {
+            "id" : "3",
+            "name" : "Creekside Physical Therapy",
+            "address" : "4205 Castlevale Road",
+            "phone" : "(509) 576-0100",
+            "website" : "https://creeksidept.com/",
+            "image_src" : "creekside-pt.webp",
+            "membership_level" : "Bronze",
+            "slogan" : "Exercise is Medicine"
+        },
+        {
+            "id" : "4",
+            "name" : "Q Home Loans",
+            "address" : "301 S 72nd St, Suite 105",
+            "phone" : "(509) 930-6549",
+            "website" : "https://qhomeloans.com/yakima/",
+            "image_src" : "q-home-loans-logo.webp",
+            "membership_level" : "Gold",
+            "slogan" : "Mortgage made easy"
+        },
+        {
+            "id" : "5",
+            "name" : "Harvest Chevrolet",
+            "address" : "1600 E Yakima Ave.",
+            "phone" : "(509) 594-4135",
+            "website" : "https://www.harvestchevy.com/",
+            "image_src" : "harvest-logo.webp",
+            "membership_level" : "Gold",
+            "slogan" : "Making a difference in our community"
+        },
+        {
+            "id" : "6",
+            "name" : "Cowiche Canyon Kitchen & Icehouse",
+            "address" : "202 E Yakima Ave",
+            "phone" : "(509) 457-2007",
+            "website" : "https://www.cowichecanyon.com/",
+            "image_src" : "cowiche-logo.webp",
+            "membership_level" : "Bronze",
+            "slogan" : "Quality means doing it right when no one is looking"
+        },
+        {
+            "id" : "7",
+            "name" : "Advanced Digital Imaging",
+            "address" : "3402 W. Washington Ave",
+            "phone" : "(509) 452-4455",
+            "website" : "https://www.adiyakima.com/",
+            "image_src" : "adi-logo.webp",
+            "membership_level" : "Bronze",
+            "slogan" : "Local Custom Graphic Sign and Banner"
+        },
+        {
+            "id" : "8",
+            "name" : "Horizon Distribution Inc.",
+            "address" : "PO Box 1021",
+            "phone" : "(509) 453-3181",
+            "website" : "https://www.horizondistribution.com/",
+            "image_src" : "hd-logo.webp",
+            "membership_level" : "Silver",
+            "slogan" : "Serving our customers since 1881"
+        },
+        {
+            "id" : "9",
+            "name" : "The Range",
+            "address" : "1701 Garretson Lane",
+            "phone" : "(509) 571-1449",
+            "website" : "https://www.therangellc.com/",
+            "image_src" : "range-logo.webp",
+            "membership_level" : "Silver",
+            "slogan" : "Yakima's Premier Indoor Gun Range"
+        }
+    ]
+}
