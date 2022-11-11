@@ -35,8 +35,6 @@ const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(no
 
 currentDate.innerHTML = `<em>${fullDate}</em>`;
 
-document.querySelector("#sub-date").value = fullDate;
-
 const imgOptions = {
   threshold: 0,
   rootMargin: "0px 0px 50px 0px"

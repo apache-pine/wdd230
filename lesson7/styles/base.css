@@ -378,3 +378,7 @@ img[data-src] {
     margin-top: 0;
     text-align: center;
 }
+
+.discover h3 {
+    text-align: center;
+}
