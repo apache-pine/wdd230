@@ -1,11 +1,3 @@
-const now = new Date();
-
-const currentYear = now.getFullYear();
-
-const currentDay = now.getDay();
-
-const theHour = now.getHours();
-
 const visitsDisplay = document.querySelector(".last-visit");
 
 let currentVisit = Date.now();
@@ -22,4 +14,4 @@ if (lastVisit !== 0) {
   visitsDisplay.textContent = "This is your first time visiting this page!"
 };
 
-localStorage.setItem("last-visit-ls", currentVisit)
+localStorage.setItem("last-visit-ls", currentVisit);
