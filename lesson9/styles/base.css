@@ -257,11 +257,11 @@ hr {
     padding: 0 3rem 1rem 3rem;
 }
 
-.spotlight-sec {
+.spotlight-sec, .cards {
     padding: .5rem;
 }
 
-.spotlight {
+.spotlight, .card {
     max-width: 90%;
     border: 1px solid rgba(0,0,0,0.1);
     margin: 1rem auto;
@@ -269,27 +269,36 @@ hr {
     box-shadow: 0 0 20px 1px #aaa;
 }
 
-.spotlight h3 {
+.spotlight h3, .card h3 {
     background-color: var(--primary-color);
     padding: .3rem;
 }
 
-.spotlight img {
+.spotlight img, .card img {
     height: auto;
     max-width: 40%;
     margin: .5rem;
 }
 
-.spotlight2 img {
+.spotlight2 img, #card2 img, #card4 img, #card5 img {
     background-color: white;
     padding: 2.5rem 1rem;
 }
 
-.spotlight-tagline {
+#card3 img {
+    background-color: white;
+    padding: .5rem;
+}
+
+#card4 img, #card8 img, #card9 img {
+    padding: 1rem;
+}
+
+.spotlight-tagline, .slogan {
     font-style: italic;
 }
 
-.spotlight a {
+.spotlight a, .card a {
     color: white;
     text-decoration: none;
 }
@@ -446,4 +455,91 @@ form label.top input:required:valid {
 
 .thank-you-main h2 {
     text-align: center;
+}
+
+/* start of directory page */
+
+.directory-main h2 {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: var(--accent3-color);
+    border-radius: .75rem;
+    text-align: center;
+}
+
+.sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.sort button {
+    margin: 0 1rem .75rem 1rem;
+}
+
+.card {
+    height: 95%;
+    width: 90%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.grid .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+.grid .card h3 {
+    width: 97%;
+    height: 15%;
+}
+
+.grid .card hr {
+    width: 97%;;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.list .card {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-template-rows: 1fr;
+	align-items: center;
+}
+
+.list .card img {
+    display: none;
+}
+
+.list .card .slogan {
+    display: none;
+}
+
+.list .card hr {
+    display: none;
+}
+
+.list .card h3 {
+    font-size: .85rem;
+    margin: .25rem;
+}
+
+.list .card p, .list .card a {
+    font-size: .75rem;
+    padding: .5rem;
 }

@@ -157,4 +157,13 @@ form input.form-button {
     margin-top: 0;
 }
 
+.list .card h3 {
+    font-size: 1rem;
+}
+
+.list .card p, .list .card a {
+    font-size: .83rem;
+}
+
+
 }

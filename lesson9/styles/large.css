@@ -172,4 +172,12 @@ form label.sbs {
     font-size: 1rem;
 }
 
+.list .card h3 {
+    font-size: 1.25rem;
+}
+
+.list .card p, .list .card a {
+    font-size: 1rem;
+}
+
 }
