@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Work</title>
+    <meta
+      name="description"
+      content="A simple page using an API to 
+    fetch data about the current weather in Fairbanks, Alaska."
+    />
+    <meta name="author" content="Kylar Sorensen" />
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="styles/weather-api.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather in Fairbanks, Alaska</h1>
+    </header>
+    <main>
+      <div class="weather-display">
+        <section class="current-conditions-sec">
+          <h3>Current Conditions:</h3>
+          <figure>
+            <img id="weatherIcon" src="" alt="" />
+            <figcaption id="condition"></figcaption>
+          </figure>
+        </section>
+        <section class="temp-sec">
+          <h3>Temperature:</h3>
+          <p>Actual Temperature: <span id="temp"></span>&deg;F</p>
+          <p>Feels Like: <span id="feelsLike"></span>&deg;F</p>
+          <p>High: <span id="tempMax"></span>&deg;F</p>
+          <p>Low: <span id="tempMin"></span>&deg;F</p>
+          <p>Pressure: <span id="pressure"></span> hPa</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+        </section>
+        <section class="wind-sec">
+          <h3>Wind:</h3>
+          <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
+          <p>Direction: <span id="windDirect"></span>&deg;</p>
+          <p>Wind Chill: <span id="windChill"></span></p>
+        </section>
+        <section class="time-sec">
+          <h3>Time:</h3>
+          <p>Time Ran: <span id="currentTime"></span></p>
+          <p>Sunrise: <span id="sunrise"></span></p>
+          <p>Sunset: <span id="sunset"></span></p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      &copy;<span class="current-year"></span> Kylar Sorensen | BYU-Idaho | WDD
+      230
+    </footer>
+    <script src="scripts/weatherapi.js"></script>
+  </body>
+</html>
