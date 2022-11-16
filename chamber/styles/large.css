@@ -4,6 +4,27 @@ body {
     font-size: 20px;
 }
 
+#social {
+    grid-column: 5 / 6;
+}
+
+#social img {
+    height: 48px;
+    width: auto;
+}
+
+.site-name {
+    grid-column: 2 / 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.site-name div {
+    padding: 1.25rem;
+    font-size: 1.75rem;
+}
+
 nav {
     padding: 0 10%;
 }
@@ -21,15 +42,7 @@ nav ul li {
     flex: 1 1 auto;
 }
 
-#footer-site-name {
-    grid-row: 2 / 3;
-}
-
-#footer-addr {
-    grid-row: 3 / 5;
-}
-
-main {
+.home-main {
     grid-template-columns: repeat(4, 1fr) 3rem;
     max-width: 1440px;
     grid-gap: 1.5rem;
@@ -43,20 +56,17 @@ main {
     grid-column: 1 / 2;
     grid-row-start: 1;
     padding: .5rem 1rem;
-    height: 250px;
 }
 
 .hero-div {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
     margin: 0 0 1rem 0;
-    height: 570px;
 }
 
 .spotlight-sec {
     grid-column: 4 / 6;
-    grid-row: 1 / 4;
-    height: 800px;
+    grid-row-start: 1;
     display: block;
     font-size: .8rem;
 }
@@ -70,31 +80,104 @@ main {
     margin-bottom: 0;
 }
 
+.spotlight3 img {
+    padding: .5rem;
+    background-color: white;
+}
+
 .spotlight {
     max-width: 100%;
     padding: 0 0 .5rem 0;
-    height: 230px;
+}
+
+.spotlight-tagline, .spotlight p {
+    margin: 0;
+}
+
+.spotlight-tagline {
+    font-size: 1.2rem;
 }
 
 .weather {
     grid-column: 1 / 2;
     grid-row-start: 2;
     margin: 0 auto;
-    height: 300px;
-    padding: 0 90px;
 }
 
 .join-us {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     padding: 1rem;
-    height: 150px;
 }
 
 .news {
     grid-column: 2 / 4;
     grid-row-start: 3;
     padding: 1rem;
+}
+
+#footer-site-name {
+    grid-row: 2 / 3;
+}
+
+#footer-addr {
+    grid-row: 3 / 5;
+}
+
+.dis-image {
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.right {
+    float: right;
+    margin-left: 1.5rem;
+}
+
+.discover {
+    max-width: 1440px;
+}
+
+.discover h2 {
+    padding-top: 2rem;
+}
+
+.discover p {
+    padding: 0 1rem;
+}
+
+.form-main {
+    grid-template-columns: 3fr 2fr;
+}
+
+form label.sbs {
+    padding: .3rem 0;
+}
+
+.form-main {
+    max-width: 1440px;
+}
+
+.mem-desc h2 {
+    font-size: 1.5rem;
+}
+
+.mem-desc p {
+    font-size: 1rem;
+}
+
+.list .card h3 {
+    font-size: 1.25rem;
+}
+
+.list .card p, .list .card a {
+    font-size: 1rem;
 }
 
 }

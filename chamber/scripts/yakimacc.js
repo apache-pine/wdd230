@@ -1,29 +1,74 @@
 const now = new Date();
 
-const current_year = now.getFullYear();
+const currentYear = now.getFullYear();
 
-document.querySelector(".current-year").textContent = current_year;
+const currentDay = now.getDay();
 
-const last_modif = new Date(document.lastModified);
+const theHour = now.getHours();
 
-document.querySelector("#last-modif").textContent = `Last Updated: ${last_modif.toLocaleString()}`;
+document.querySelector(".current-year").textContent = currentYear;
 
-const ham_btn = document.getElementById("ham-btn");
+const lastModif = new Date(document.lastModified);
 
-const primary_nav = document.getElementById("primary-nav");
+document.querySelector("#last-modif").textContent = `Last Updated: ${lastModif.toLocaleString()}`;
+
+const hamBtn = document.getElementById("ham-btn");
+
+const primaryNav = document.getElementById("primary-nav");
 
 function toggleMenu() {
-    primary_nav.classList.toggle("open")
-    ham_btn.classList.toggle("open")
+    primaryNav.classList.toggle("open")
+    hamBtn.classList.toggle("open")
 };
 
-ham_btn.onclick = toggleMenu;
+hamBtn.onclick = toggleMenu;
 
-const current_date = document.querySelector(".current-date");
+const banner = document.querySelector(".banner");
 
-const full_date = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+if (currentDay == 1 || currentDay == 2){
+    banner.classList.toggle("open")
+};
 
-current_date.innerHTML = `<em>${full_date}</em>`;
+const currentDate = document.querySelector(".current-date");
 
-const current_day = now.getDay();
+const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 
+currentDate.innerHTML = `<em>${fullDate}</em>`;
+
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 50px 0px"
+};
+
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+const loadImages = (image) => {
+image.setAttribute("src", image.getAttribute("data-src"));
+image.onload = () => {
+  image.removeAttribute("data-src");
+};
+};
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  });
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+};
+
+function selectResponse() {
+	const s = document.querySelector('#selected');
+	const sel = document.querySelector('#select-mem');
+	s.style.display = "block";
+	s.textContent = sel.value;
+};
