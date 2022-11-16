@@ -66,3 +66,9 @@ figcaption {
 p {
     padding-left: 30%;
 }
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
