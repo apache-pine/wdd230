@@ -39,7 +39,7 @@ function displayResults(data) {
     weatherIcon.alt = condition;
     conditionId.textContent = condition;
     temp.textContent = Math.round(results.main.temp);
-    windSpeed.textContent = results.wind.speed;
+    windSpeed.textContent = Math.round(results.wind.speed);
     windChill.textContent = calcWindChill(results.main.temp, results.wind.speed);
   };
 
