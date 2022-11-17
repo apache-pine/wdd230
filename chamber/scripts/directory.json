@@ -17,7 +17,7 @@
             "phone" : "(509) 249-5735",
             "website" : "https://pacificvascular.com/pv_location/pacific-vascular-yakima/",
             "image_src" : "pv-logo.webp",
-            "membership_level" : "Silver",
+            "membership_level" : "Gold",
             "slogan" : "Specialists in Vascular Diagnostic Ultrasound"
         },
         {
@@ -27,7 +27,7 @@
             "phone" : "(509) 576-0100",
             "website" : "https://creeksidept.com/",
             "image_src" : "creekside-pt.webp",
-            "membership_level" : "Bronze",
+            "membership_level" : "Gold",
             "slogan" : "Exercise is Medicine"
         },
         {
@@ -37,7 +37,7 @@
             "phone" : "(509) 930-6549",
             "website" : "https://qhomeloans.com/yakima/",
             "image_src" : "q-home-loans-logo.webp",
-            "membership_level" : "Gold",
+            "membership_level" : "Bronze",
             "slogan" : "Mortgage made easy"
         },
         {
