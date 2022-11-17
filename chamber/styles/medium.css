@@ -111,7 +111,7 @@ body {
 }
 
 .dis-image:hover {
-    scale: 1.01;
+    transform: scale(1.03);
     box-shadow: 0px 0px 75px 1px black;
 }
 
