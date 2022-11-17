@@ -102,21 +102,33 @@
         <fieldset>
           <legend>Contact Information</legend>
           <label for="first-name" class="top"
-            >First Name* <input type="text" name="first-name" required
+            >First Name*
+            <input type="text" name="first-name" id="first-name" required
           /></label>
           <label for="last-name" class="top"
-            >Last Name* <input type="text" name="last-name" required /></label
+            >Last Name*
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              required /></label
           ><label for="email" class="top"
             >Email*
             <input
               type="email"
               name="email"
               placeholder="user@email.com"
+              id="email"
               required
           /></label>
           <label for="phone" class="top"
             >Phone*
-            <input type="tel" name="phone" placeholder="1235551234" required
+            <input
+              type="tel"
+              name="phone"
+              placeholder="1235551234"
+              id="phone"
+              required
           /></label>
         </fieldset>
         <fieldset>
@@ -128,6 +140,7 @@
               name="biz-title"
               pattern="[A-Za-z -]{1,50}"
               minlength="7"
+              id="biz-title"
           /></label>
           <label for="biz-name" class="top"
             >Business Name*
@@ -135,6 +148,7 @@
               type="text"
               name="biz-name"
               placeholder="Company Inc."
+              id="biz-name"
               required
           /></label>
           <label for="biz=desc" class="top"
@@ -142,6 +156,7 @@
             <textarea
               name="biz-desc"
               placeholder="Please describe your business here..."
+              id="biz-desc"
             ></textarea>
           </label>
         </fieldset>
