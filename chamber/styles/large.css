@@ -29,11 +29,11 @@ nav {
     padding: 0 10%;
 }
 
-#ham-btn {
+#hamBtn {
     display: none;
 }
 
-nav ul#primary-nav {
+nav ul#primaryNav {
     display: flex;
     text-align: center;
 }
@@ -154,6 +154,14 @@ nav ul li {
 
 .form-main {
     grid-template-columns: 3fr 2fr;
+}
+
+fieldset > * {
+    margin: 0 3rem;
+}
+
+form label.top input, form textarea {
+    width: 92%;
 }
 
 form label.sbs {

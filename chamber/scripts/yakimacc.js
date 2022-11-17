@@ -6,15 +6,15 @@ const currentDay = now.getDay();
 
 const theHour = now.getHours();
 
-document.querySelector(".current-year").textContent = currentYear;
+document.querySelector(".currentYear").textContent = currentYear;
 
 const lastModif = new Date(document.lastModified);
 
-document.querySelector("#last-modif").textContent = `Last Updated: ${lastModif.toLocaleString()}`;
+document.querySelector("#lastModif").textContent = `Last Updated: ${lastModif.toLocaleString()}`;
 
-const hamBtn = document.getElementById("ham-btn");
+const hamBtn = document.getElementById("hamBtn");
 
-const primaryNav = document.getElementById("primary-nav");
+const primaryNav = document.getElementById("primaryNav");
 
 function toggleMenu() {
     primaryNav.classList.toggle("open")
@@ -29,7 +29,7 @@ if (currentDay == 1 || currentDay == 2){
     banner.classList.toggle("open")
 };
 
-const currentDate = document.querySelector(".current-date");
+const currentDate = document.querySelector(".currentDate");
 
 const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 

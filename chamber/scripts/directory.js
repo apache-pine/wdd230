@@ -52,8 +52,8 @@ function displayBusinesses(business) {
 
 getBusinesses();
 
-const gridButton = document.querySelector('#grid-btn');
-const listButton = document.querySelector('#list-btn');
+const gridButton = document.querySelector('#gridBtn');
+const listButton = document.querySelector('#listBtn');
 const display = document.querySelector('.cards');
 
 gridButton.addEventListener('click', () => {

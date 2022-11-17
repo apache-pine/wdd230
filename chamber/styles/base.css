@@ -1,5 +1,7 @@
 /* https://coolors.co/052639-117fa6-91d9f3-7e9339-afc841 */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
 :root {
     --primary-color: #052639;
     --secondary-color: #117FA6;
@@ -87,7 +89,7 @@ header {
     justify-self: center;
 }
 
-.current-date {
+.currentDate {
     grid-column: span 5;
     background-color: var(--secondary-color);
     color: white;
@@ -101,7 +103,7 @@ nav {
     grid-column: span 5;
 }
 
-#ham-btn {
+#hamBtn {
     border: 1px solid white;
     font-size: 2rem;
     width: 42px;
@@ -111,19 +113,19 @@ nav {
     padding: 0;
 }
 
-#ham-btn span:nth-child(1) {
+#hamBtn span:nth-child(1) {
     display: block;
 }
 
-#ham-btn span:nth-child(2) {
+#hamBtn span:nth-child(2) {
     display: none;
 }
 
-#ham-btn.open span:nth-child(1) {
+#hamBtn.open span:nth-child(1) {
     display: none;
 }
 
-#ham-btn.open span:nth-child(2) {
+#hamBtn.open span:nth-child(2) {
     display: block;
 }
 
@@ -224,12 +226,12 @@ nav ul li a:hover {
     margin: 0;
 }
 
-.weather-icon {
+#weatherIcon {
     height: auto;
     max-width: 120%;
 }
 
-.temp {
+#temp {
     font-size: 200%;
 }
 
@@ -240,12 +242,12 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.condition {
+#condition {
     font-size: 120%;
     padding-bottom: .5rem;
 }
 
-.wind-speed {
+#wind-speed {
     padding-top: 1rem;
 }
 
@@ -450,7 +452,27 @@ form label.top input:required:valid {
 }
 
 .mem-desc {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: var(--primary-color);
+    color: white;
+    max-width: 78%;
+}
+
+fieldset > * {
+    margin: 0 1rem;
+}
+
+.mem-desc h2 {
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+.mem-desc p {
+    font-size: .75rem;
+    margin-top: 0;
 }
 
 .thank-you-main h2 {

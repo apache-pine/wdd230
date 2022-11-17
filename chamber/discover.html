@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-EDR9TXT6CC"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-EDR9TXT6CC");
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,17 +11,7 @@
       offers several pictures from the local area, displaying what sets 
       Yakima apart and makes it special."
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
     <link rel="shortcut icon" href="images/sunny-valley.ico" />
-    <link rel="preload" href="https://fonts.googleapis.com" />
-    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
-    />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
@@ -43,25 +19,26 @@
   <body>
     <header>
       <picture>
-        <img
-          class="logo-header"
-          src="images/sunny-valley.webp"
-          alt="sun shining over a field, clipart"
-        />
+        <a href="index.html"
+          ><img
+            class="logo-header"
+            src="images/sunny-valley.webp"
+            alt="sun shining over a field, clipart"
+        /></a>
       </picture>
       <section class="site-name">
         <h1>Yakima</h1>
         <div>Chamber of Commerce</div>
       </section>
       <div id="social">
-        <a href="facebook.com" target="_blank"
+        <a href="https://www.facebook.com/" target="_blank"
           ><img
             src="images/facebook-logo.webp"
             alt="Facebook Logo"
             height="32"
             width="32"
         /></a>
-        <a href="youtube.com" target="_blank"
+        <a href="https://www.youtube.com/" target="_blank"
           ><img
             src="images/youtube-logo.webp"
             alt="YouTube Logo"
@@ -69,10 +46,10 @@
             width="32"
         /></a>
       </div>
-      <button id="ham-btn"><span>&#9776;</span><span>X</span></button>
-      <div class="current-date"></div>
+      <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
+      <div class="currentDate"></div>
       <nav>
-        <ul id="primary-nav">
+        <ul id="primaryNav">
           <li><a id="homepage" href="index.html">Home</a></li>
           <li><a id="discover" href="discover.html">Discover</a></li>
           <li><a id="directory" href="directory.html">Directory</a></li>
@@ -262,17 +239,18 @@
       </section>
       <section>
         <h3>Last Visit:</h3>
-        <p class="last-visit"></p>
+        <p class="lastVisit"></p>
       </section>
     </main>
     <footer>
       <div id="footer-site-info">
         <picture>
-          <img
-            class="logo-footer"
-            src="images/sunny-valley.webp"
-            alt="sun shining over a field, clipart"
-          />
+          <a href="index.html">
+            <img
+              class="logo-footer"
+              src="images/sunny-valley.webp"
+              alt="sun shining over a field, clipart"
+          /></a>
         </picture>
         <h4 id="footer-site-name">Yakima Chamber of Commerce</h4>
         <p id="footer-addr">
@@ -286,8 +264,8 @@
       <hr />
       <div>
         <p class="true-footer">
-          &copy;<span class="current-year"></span> Yakima Chamber | Kylar
-          Sorensen | WDD 230 Project | <span id="last-modif"></span>
+          &copy;<span class="currentYear"></span> Yakima Chamber | Kylar
+          Sorensen | WDD 230 Project | <span id="lastModif"></span>
         </p>
       </div>
     </footer>
