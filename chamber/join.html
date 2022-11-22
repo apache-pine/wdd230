@@ -101,17 +101,13 @@
       <form method="get" action="thankyou.html">
         <fieldset>
           <legend>Contact Information</legend>
-          <label for="first-name" class="top"
+          <label for="firstName" class="top"
             >First Name*
-            <input type="text" name="first-name" id="first-name" required
+            <input type="text" name="firstName" id="firstName" required
           /></label>
-          <label for="last-name" class="top"
+          <label for="lastName" class="top"
             >Last Name*
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              required /></label
+            <input type="text" name="lastName" id="lastName" required /></label
           ><label for="email" class="top"
             >Email*
             <input
@@ -133,30 +129,30 @@
         </fieldset>
         <fieldset>
           <legend>Business Information</legend>
-          <label for="biz-title" class="top"
+          <label for="bizTitle" class="top"
             >Business Position/Title
             <input
               type="text"
-              name="biz-title"
+              name="bizTitle"
               pattern="[A-Za-z -]{1,50}"
               minlength="7"
-              id="biz-title"
+              id="bizTitle"
           /></label>
-          <label for="biz-name" class="top"
+          <label for="bizName" class="top"
             >Business Name*
             <input
               type="text"
-              name="biz-name"
+              name="bizName"
               placeholder="Company Inc."
-              id="biz-name"
+              id="bizName"
               required
           /></label>
-          <label for="biz-desc" class="top"
+          <label for="bizDesc" class="top"
             >Business description
             <textarea
-              name="biz-desc"
+              name="bizDesc"
               placeholder="Please describe your business here..."
-              id="biz-desc"
+              id="bizDesc"
             ></textarea>
           </label>
         </fieldset>
@@ -164,27 +160,27 @@
           <legend>Membership Level</legend>
           <div class="selection">
             <label class="sbs"
-              ><input type="radio" name="membership-level" value="np" /> NP
+              ><input type="radio" name="membershipLevel" value="np" /> NP
               Membership</label
             >
             <label class="sbs"
-              ><input type="radio" name="membership-level" value="bronze" />
+              ><input type="radio" name="membershipLevel" value="bronze" />
               Bronze Membership</label
             >
             <label class="sbs"
-              ><input type="radio" name="membership-level" value="silver" />
+              ><input type="radio" name="membershipLevel" value="silver" />
               Silver Membership</label
             >
             <label class="sbs"
-              ><input type="radio" name="membership-level" value="gold" /> Gold
+              ><input type="radio" name="membershipLevel" value="gold" /> Gold
               Membership</label
             >
           </div>
         </fieldset>
-        <input type="hidden" name="date-submitted" value="" id="subDate" />
+        <input type="hidden" name="dateSubmitted" value="" id="subDate" />
         <input
           type="submit"
-          name="sub-button"
+          name="subButton"
           value="Join the Chamber"
           class="form-button"
         />
