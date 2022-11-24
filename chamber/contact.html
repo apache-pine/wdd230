@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yakima Chamber of Commerce - Directory</title>
+    <title>Yakima Chamber of Commerce - Contact</title>
     <meta
       name="description"
       content="The Yakima Chamber of Commerce promotes pride in our diverse communities through positive, active leadership aimed at creating a cohesive, successful business climate in our city."
@@ -21,8 +21,7 @@
           <img
             class="logo-header"
             src="images/sunny-valley.webp"
-            alt="sun shining over a field, clipart"
-          /> </picture
+            alt="sun shining over a field, clipart" /></picture
       ></a>
       <section class="site-name">
         <h1>Yakima</h1>
@@ -59,13 +58,41 @@
     <div class="banner">
       <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
-    <main class="directory-main">
-      <h2>Business Directory</h2>
-      <div class="sort">
-        <button id="gridBtn">Grid</button>
-        <button id="listBtn">List</button>
-      </div>
-      <div class="cards def-div grid"></div>
+    <main class="contact-main">
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <label for="name" class="top"
+            >Name*
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label for="email" class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="user@email.com"
+              id="email"
+              required
+            />
+          </label>
+          <label for="questionComment" class="top"
+            >Questions/Comments
+            <textarea
+              name="questionComment"
+              placeholder="Please type your questions and comments here..."
+              id="questionComment"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="hidden" name="dateSubmitted" value="" id="subDate" />
+        <input
+          type="submit"
+          name="subButton"
+          value="Send Questions/Comments"
+          class="form-button"
+        />
+      </form>
     </main>
     <footer>
       <div id="footer-site-info">
@@ -95,6 +122,6 @@
       </div>
     </footer>
     <script src="scripts/yakimacc.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/form.js"></script>
   </body>
 </html>
