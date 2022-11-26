@@ -283,17 +283,17 @@ hr {
     margin: .5rem;
 }
 
-.spotlight2 img, #card2 img, #card4 img, #card5 img {
+.whiteBackground, #card2 img, #card4 img, #card5 img {
     background-color: white;
     padding: 2.5rem 1rem;
 }
 
-#card3 img {
+#card3 img, .creeksidePT {
     background-color: white;
     padding: .5rem;
 }
 
-#card4 img, #card8 img, #card9 img {
+.extraPadding, #card4 img, #card8 img, #card9 img {
     padding: 1rem;
 }
 
