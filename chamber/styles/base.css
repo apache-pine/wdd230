@@ -260,7 +260,7 @@ hr {
     padding: 0 3rem 1rem 3rem;
 }
 
-.spotlight-sec, .cards {
+.spotlight-sec {
     padding: .5rem;
 }
 
@@ -277,7 +277,7 @@ hr {
     padding: .3rem;
 }
 
-.spotlight img, .card img {
+.spotlight img {
     height: auto;
     max-width: 40%;
     margin: .5rem;
@@ -522,18 +522,45 @@ fieldset > * {
 .grid .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding-bottom: .5rem;
 }
 
-.grid .card h3 {
-    width: 97%;
-    height: 15%;
+.grid .card div {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
 }
 
 .grid .card hr {
     width: 97%;;
+}
+
+.grid .card p {
+    margin: 0;
+}
+
+.grid .cardImage {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid .cardImage img {
+    max-width: 80%;
+    height: auto;
+}
+
+.grid .slogan {
+    margin-top: 2rem;
 }
 
 .list {
@@ -564,12 +591,15 @@ fieldset > * {
 .list .card h3 {
     font-size: .85rem;
     margin: .25rem;
+    width: 150%;
 }
 
 .list .card p, .list .card a {
     font-size: .75rem;
     padding: .5rem;
 }
+
+/* start of contact page */
 
 #questionComment {
     margin-bottom: 1rem;
