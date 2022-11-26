@@ -486,9 +486,9 @@ fieldset > * {
 
 /* start of directory page */
 
-.directory-main h2 {
+.top-heading {
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 1.5rem;
     margin-top: 0;
     color: var(--accent3-color);
@@ -569,4 +569,21 @@ fieldset > * {
 .list .card p, .list .card a {
     font-size: .75rem;
     padding: .5rem;
+}
+
+#questionComment {
+    margin-bottom: 1rem;
+}
+
+iframe {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.chamber-map, .office-hours, .contact-info {
+    padding: 1rem;
+}
+
+.contact-info a {
+    color: white;
 }

@@ -188,4 +188,8 @@ form label.sbs {
     font-size: 1rem;
 }
 
+.chamber-map, .office-hours, .contact-info {
+    margin-bottom: 1rem;
+}
+
 }
