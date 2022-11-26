@@ -11,19 +11,25 @@ async function getBusinesses() {
 
 function displayBusinesses(business) {
     let card = document.createElement('section');
+    let div = document.createElement('div');
     let h3 = document.createElement('h3');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let website = document.createElement('a');
+    let figure = document.createElement('figure');
     let image = document.createElement('img');
-    let memLevel = document.createElement('p');
-    let slogan = document.createElement('p');
+    let slogan = document.createElement('figcaption');
     let hr = document.createElement('hr');
     
     card.setAttribute('class', 'card');
     card.setAttribute('id', `card${business.id}`)
 
+    figure.setAttribute('class', 'cardImage');
+
     h3.textContent = business.name;
+
+    div.setAttribute('class', 'businessName');
+    div.appendChild(h3);
 
     image.setAttribute('src', `images/${business.image_src}`);
     image.setAttribute('alt', `${business.name}'s logo`);
@@ -40,9 +46,11 @@ function displayBusinesses(business) {
     website.setAttribute('target', '_blank');
     website.textContent = "Website";
 
-    card.appendChild(h3);
-    card.appendChild(image);
-    card.appendChild(slogan);
+    figure.appendChild(image);
+    figure.appendChild(slogan);
+
+    card.appendChild(div);
+    card.appendChild(figure);
     card.appendChild(hr);
     card.appendChild(address);
     card.appendChild(phone);
