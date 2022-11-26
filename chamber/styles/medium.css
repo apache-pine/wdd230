@@ -98,6 +98,7 @@ body {
 #footer-email {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    align-self: flex-end;
 }
 
 #footer-num {
