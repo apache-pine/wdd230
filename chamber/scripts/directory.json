@@ -43,7 +43,7 @@
         {
             "id" : "5",
             "name" : "Harvest Chevrolet",
-            "address" : "1600 E Yakima Ave.",
+            "address" : "1600 E Yakima Ave",
             "phone" : "(509) 594-4135",
             "website" : "https://www.harvestchevy.com/",
             "image_src" : "harvest-logo.webp",
@@ -63,7 +63,7 @@
         {
             "id" : "7",
             "name" : "Advanced Digital Imaging",
-            "address" : "3402 W. Washington Ave",
+            "address" : "3402 W Washington Ave",
             "phone" : "(509) 452-4455",
             "website" : "https://www.adiyakima.com/",
             "image_src" : "adi-logo.webp",
