@@ -203,19 +203,12 @@ nav ul li a:hover {
     padding-top: 1rem;
 }
 
-.event p {
-    margin: 0;
-}
-
-.event a {
-    font-size: .8rem;
-    color: var(--accent3-color);
-    text-decoration: none;
-}
-
 .subheading {
     font-size: 1.25rem;
     padding: .75rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: white;
 }
 
 .weather {
@@ -258,6 +251,10 @@ hr {
 
 .news {
     padding: 0 3rem 1rem 3rem;
+}
+
+.news h3, .event h3 {
+    padding-bottom: 1rem;
 }
 
 .spotlight-sec {
