@@ -39,13 +39,10 @@ body {
 
 .spotlight-sec {
     grid-row: 3 / 4;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.spotlight {
-    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 98%;
 }
 
 .join-us {

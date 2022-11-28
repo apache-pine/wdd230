@@ -280,6 +280,25 @@ hr {
     margin: .5rem;
 }
 
+.spotlight1, .spotlight2 {
+    padding: .5rem;
+    margin: 1rem;
+    width: 100%;
+    padding: 0 0 .5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spotlight hr {
+    width: 97%;
+}
+
+.spotlight h3 {
+    width: 98%;
+}
+
 .whiteBackground, #card2 img, #card4 img, #card5 img {
     background-color: white;
     padding: 2.5rem 1rem;
@@ -551,12 +570,12 @@ fieldset > * {
     align-items: center;
 }
 
-.grid .cardImage img {
+.grid .cardImage img, .spotlight img {
     max-width: 80%;
     height: auto;
 }
 
-.grid .slogan {
+.grid .slogan, .spotlight-tagline {
     margin-top: 2rem;
 }
 
