@@ -38,8 +38,8 @@ function displayResults(data) {
     weatherIcon.src = getWeatherIcon(icon);
     weatherIcon.alt = condition;
     conditionId.textContent = condition;
-    temp.textContent = Math.round(results.main.temp);
-    windSpeed.textContent = Math.round(results.wind.speed);
+    temp.textContent = `${Math.round(results.main.temp)}°F`;
+    windSpeed.textContent = `${Math.round(results.wind.speed)} MPH`;
     windChill.textContent = calcWindChill(results.main.temp, results.wind.speed);
   };
 
