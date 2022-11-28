@@ -23,7 +23,7 @@
         {
             "id" : "3",
             "name" : "Creekside Physical Therapy",
-            "address" : "4205 Castlevale Road",
+            "address" : "4205 Castlevale Rd",
             "phone" : "(509) 576-0100",
             "website" : "https://creeksidept.com/",
             "image_src" : "creekside-pt.webp",
@@ -33,7 +33,7 @@
         {
             "id" : "4",
             "name" : "Q Home Loans",
-            "address" : "301 S 72nd St, Suite 105",
+            "address" : "301 S 72nd St, Ste 105",
             "phone" : "(509) 930-6549",
             "website" : "https://qhomeloans.com/yakima/",
             "image_src" : "q-home-loans-logo.webp",
@@ -83,7 +83,7 @@
         {
             "id" : "9",
             "name" : "The Range",
-            "address" : "1701 Garretson Lane",
+            "address" : "1701 Garretson Ln",
             "phone" : "(509) 571-1449",
             "website" : "https://www.therangellc.com/",
             "image_src" : "range-logo.webp",
