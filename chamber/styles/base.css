@@ -355,6 +355,10 @@ hr {
     margin-bottom: .3rem;
 }
 
+.join-footer-site-name {
+    font-size: 1.2rem;
+}
+
 #footer-addr {
     font-style: italic;
     padding-bottom: 1rem;
