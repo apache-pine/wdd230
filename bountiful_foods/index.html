@@ -67,7 +67,72 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="home-main">
+      <div class="hero-div">
+        <picture>
+          <source media="(max-width: 34.9rem)" srcset="images/hero-base.webp" />
+          <source
+            media="(max-width: 59.9rem)"
+            srcset="images/hero-medium.webp"
+          />
+          <img
+            class="hero-image"
+            src="images/hero-large.webp"
+            alt="Two people drinking smoothies"
+          />
+        </picture>
+      </div>
+      <div class="pop-drinks">
+        <h2>Popular Drinks Designed by Customers</h2>
+        <section class="popDrinksSec"></section>
+        <section class="previousDrinksSec"></section>
+        <button onclick="window.location.href = 'fresh.html';">
+          Create Your Own Drink
+        </button>
+      </div>
+      <div class="weather">
+        <h2>Weather</h2>
+        <div class="current-div">
+          <h3>Current Conditions</h3>
+          <section class="currentSec"></section>
+        </div>
+        <div class="forecast-div">
+          <h3>3-Day Forecast</h3>
+          <section class="forecastSec"></section>
+        </div>
+      </div>
+      <div class="contact-div">
+        <h2>Contact Info</h2>
+        <p class="contact-blurb">
+          Bountiful Foods is a small business specializing in organic, locally
+          grown foods. We are physically located in Carlsbad, California,
+          however, we have many food trucks that cover the coastal area from Los
+          Angeles to San Diego.
+        </p>
+        <a
+          class="contact-address"
+          href="https://www.google.com/maps"
+          target="_blank"
+        >
+          1234 Main Street<br />
+          Carlsbad, CA 92008<br />
+        </a>
+        <p class="contact-email">
+          <a href="mailto:contact@bountiful-foods-ca.com"
+            >contact@bountiful-foods-ca.com</a
+          >
+        </p>
+        <p class="contact-phone">
+          <a href="tel:123-456-7890">(123) 456-7890</a>
+        </p>
+      </div>
+      <div class="about-area-div">
+        <section class="about-area-sec1"></section>
+        <section class="about-area-sec2"></section>
+        <section class="about-area-sec3"></section>
+        <section class="about-area-sec4"></section>
+      </div>
+    </main>
     <footer>
       <div class="footer-site-info">
         <a href="index.html"
@@ -90,9 +155,8 @@
             >contact@bountiful-foods-ca.com</a
           >
         </p>
-
         <p class="footer-phone">
-          <a href="tel:123-456-7890">123-456-7890</a>
+          <a href="tel:123-456-7890">(123) 456-7890</a>
         </p>
         <p class="footer-loc"><a href="#">Location Map</a></p>
       </div>
