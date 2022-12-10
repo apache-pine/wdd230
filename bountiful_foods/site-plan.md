@@ -22,7 +22,7 @@ As for education, the site will provide information on the local farms from wher
 
 The target audience for this website includes people of all ages who are looking for tasty and healthy foods and beverages. Those who are interested in placeing their orders online, as opposed to ordering in person, make up the main target audience. However, others included in the target audience include potential suppliers and those who want to learn more about the company and the sources and suppliers the company uses.
 
-The majority of the people that use the site will most likely be from the coastal area of California, as the company is based in San Diego. However, the site will also be used by tourists who are visiting the area and are looking for a healthy and tasty snack or meal. The average user will mostly likely be young adults, as they are the ones who are most likely to be interested in ordering online and taking advantage of the technology available. However, the site will also be used others who are health concious, so long as they are comfortable using the internet.
+The majority of the people that use the site will most likely be from the coastal area of California, as the company is based in San Diego. However, the site will also be used by tourists who are visiting the area and are looking for a healthy and tasty snack or meal. The average user will likely be young adults, as they are the ones who are most likely to be interested in ordering online and taking advantage of the technology available. The main demographic the site will aim for will be teens and young adults, between the ages of 16 to 30. Especially people who are active and focused on living a healthy lifestyle. The design of the site will be built with this demographic in mind.
 <br>
 
 ### Personas:
@@ -130,24 +130,51 @@ The majority of the people that use the site will most likely be from the coasta
 **Accent 2 Color:** #F36165
 **Accent 3 Color:** #D7E841
 
-The main color will be used for the background of the site, and for the main buttons. The secondary color will be used for the background of the headings and subheadings. The accent colors will be used for the background of other elements and buttons.
+The main color will be used for the background of the site, and for the main buttons. The secondary color will be used for the background of the headings and subheadings. The accent colors will be used for the background of other elements and buttons. Font on a white background will be black, while font on most colored backgrounds will be white. The only exceptions are when font is used on Main or Accent 3 colored backgrounds, in which case font will be black.
 
 ---
 
 ## Typography
 
-**Font:** Rubik - Medium 500
+**Font:** Rubik - Medium 600
 **Font:** Poppins - Regular 400
 **Source:** https://fonts.google.com/share?selection.family=Poppins%7CRubik:wght@500
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@600&display=swap');
 </style>
 
 Rubik will be used for the headings and subheadings, while Poppins will be used for the body text. Backup fonts for Rubik will be Arial and Sans Serif, while backup fonts for Poppins will be Helvetica and Sans Serif. Both will be black when on white backgrounds and white on most colored backgrounds. Font size for the body text in small views will be 16px, in medium views it will be 18px, and in large views it will be 20px.
 
-<h3 style="font-family:Rubik">An example of an h3 heading with Rubik weight 500 font</h3>
+<h3 style="font-family:Rubik">An example of an h3 heading with Rubik weight 600 font</h3>
 <p style="font-family:Poppins">An example of a paragraph with Poppins weight 400 font</p>
+
+<table>
+  <tr>
+    <th style="background-color:#dddddd; border: 2px solid #333">Element</th>
+    <th style="background-color:#dddddd; border: 2px solid #333">Font</th>
+    <th style="background-color:#dddddd; border: 2px solid #333">Weight</th>
+    <th style="background-color:#dddddd; border: 2px solid #333">Font/Background</th>
+  </tr>
+  <tr>
+    <td style="border: 2px solid #333">Headings</td>
+    <td style="border: 2px solid #333">Rubik</td>
+    <td style="border: 2px solid #333">Medium - 600</td>
+    <td style="border: 2px solid #333; color: #fff; background-color: #D90102; font-size: 24px; font-weight: 600">#FFFFFF / #D90102</td>
+  </tr>
+  <tr>
+    <td style="border: 2px solid #333">Paragraphs</td>
+    <td style="border: 2px solid #333">Poppins</td>
+    <td style="border: 2px solid #333">Regular - 400</td>
+    <td style="border: 2px solid #333">#000000 / #FFFFFF</td>
+  </tr>
+  <tr>
+    <td style="border: 2px solid #333">Buttons</td>
+    <td style="border: 2px solid #333">Poppins</td>
+    <td style="border: 2px solid #333">Regular - 400</td>
+    <td style="border: 2px solid #333; background-color: #F68B15">#000000 / #F68B15</td>
+  </tr>
+</table>
 
 ---
 
