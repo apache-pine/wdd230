@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bountiful Foods - Home</title>
+    <title>Bountiful Foods - Fresh</title>
     <meta
       name="description"
       content="Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however, they have many food trucks that cover the coastal area from Los Angeles to San Diego."
@@ -64,7 +64,103 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form method="get" id="drinkForm">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="firstName" class="top"
+            >First Name*
+            <input type="text" name="firstName" id="firstName" required
+          /></label>
+          <label for="lastName" class="top"
+            >Last Name
+            <input type="text" name="lastName" id="lastName" /></label
+          ><label for="email" class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="user@email.com"
+              id="email"
+              required
+          /></label>
+          <label for="phone" class="top"
+            >Phone*
+            <input
+              type="tel"
+              name="phone"
+              placeholder="1235551234"
+              id="phone"
+              required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Drink Order</legend>
+          <label for="ingredient1" class="top"
+            >First Ingredient
+            <select name="ingredient1" id="ingredient1" required>
+              <option value="" selected disabled>Choose an ingredient</option>
+            </select>
+          </label>
+          <label for="ingredient2" class="top"
+            >Second Ingredient
+            <select name="ingredient2" id="ingredient2" required>
+              <option value="" selected disabled>Choose an ingredient</option>
+            </select>
+          </label>
+          <label for="ingredient3" class="top"
+            >Third Ingredient
+            <select name="ingredient3" id="ingredient3" required>
+              <option value="" selected disabled>Choose an ingredient</option>
+            </select>
+          </label>
+          <label for="specialInstructions" class="top"
+            >Special Instructions
+            <textarea
+              name="specialInstructions"
+              id="specialInstructions"
+              rows="5"
+              cols="30"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="hidden" name="dateSubmitted" value="" id="subDate" />
+        <input
+          type="submit"
+          id="subButton"
+          name="subButton"
+          value="Order Drink"
+          class="form-button"
+        />
+      </form>
+      <div id="drinkOrder">
+        <h3>Drink Order</h3>
+        <p><strong>Date Ordered:</strong> <span id="drinkOrderDate"></span></p>
+        <p><strong>First Name:</strong> <span id="orderFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="orderLastName"></span></p>
+        <p><strong>Email:</strong> <span id="orderEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="orderPhone"></span></p>
+        <p>
+          <strong>First Ingredient:</strong> <span id="orderIngredient1"></span>
+        </p>
+        <p>
+          <strong>Second Ingredient:</strong>
+          <span id="orderIngredient2"></span>
+        </p>
+        <p>
+          <strong>Third Ingredient:</strong> <span id="orderIngredient3"></span>
+        </p>
+        <p>
+          <strong>Special Instructions:</strong>
+          <span id="orderSpecialInstructions"></span>
+        </p>
+        <p><strong>Total Carbohydrates:</strong> <span id="totCarbs"></span></p>
+        <p><strong>Total Protein:</strong> <span id="totProtein"></span></p>
+        <p><strong>Total Fat:</strong> <span id="totFat"></span></p>
+        <p><strong>Total Calories:</strong> <span id="totCalories"></span></p>
+        <p><strong>Total Sugar:</strong> <span id="totSugar"></span></p>
+      </div>
+    </main>
     <footer>
       <div class="footer-site-info">
         <a href="index.html"
@@ -84,7 +180,6 @@
             >contact@bountiful-foods-ca.com</a
           >
         </p>
-
         <p class="footer-phone">
           <a href="tel:123-456-7890">(123) 456-7890</a>
         </p>
