@@ -65,6 +65,7 @@
       </nav>
     </header>
     <main class="home-main">
+      <div class="hero-headline"><h2>Support locally grown food</h2></div>
       <div class="hero-div">
         <picture>
           <source media="(max-width: 36.9rem)" srcset="images/hero-base.webp" />
@@ -80,72 +81,86 @@
         </picture>
       </div>
       <div class="pop-drinks">
-        <h2>Popular Drinks Designed by Customers</h2>
+        <h3>Popular Drinks Designed by Customers</h3>
         <section class="pop-drinks-sec">
           <div class="drink-card drink1">
-            <h3>Blackberry Raspberry</h3>
+            <h4>Blackberry Raspberry</h4>
             <picture>
               <img
                 src="images/blackberry-raspberry.webp"
                 alt="Blackberry Raspberry smoothie"
+                loading="lazy"
               />
             </picture>
           </div>
           <div class="drink-card drink2">
-            <h3>Lychee Pomegranate Strawberry</h3>
+            <h4>Lychee Pomegranate Strawberry</h4>
             <picture>
               <img
                 src="images/lychee-pomegrante-strawberry.webp"
                 alt="Lychee Pomegranate Strawberry smoothie"
+                loading="lazy"
               />
             </picture>
           </div>
           <div class="drink-card drink3">
-            <h3>Mango Orange Apricot</h3>
+            <h4>Mango Orange Apricot</h4>
             <picture>
               <img
                 src="images/mango-orange-apricot.webp"
                 alt="Mango Orange Apricot smoothie"
+                loading="lazy"
               />
             </picture>
           </div>
           <div class="drink-card drink4">
-            <h3>Mango Pineapple</h3>
+            <h4>Mango Pineapple</h4>
             <picture>
               <img
                 src="images/mango-pineapple.webp"
                 alt="Mango Pineapple smoothie"
+                loading="lazy"
               />
             </picture>
           </div>
           <div class="drink-card drink5">
-            <h3>Pomegranate Dragonfruit</h3>
+            <h4>Pomegranate Dragonfruit</h4>
             <picture>
               <img
                 src="images/pomegranate-dragonfruit.webp"
                 alt="Pomegranate Dragonfruit smoothie"
+                loading="lazy"
               />
             </picture>
           </div>
           <div class="drink-card drink6">
-            <h3>Strawberry</h3>
+            <h4>Strawberry</h4>
             <picture>
-              <img src="images/strawberry.webp" alt="strawberry smoothie" />
+              <img
+                src="images/strawberry.webp"
+                alt="strawberry smoothie"
+                loading="lazy"
+              />
             </picture>
           </div>
           <div class="drink-card drink7">
-            <h3>Strawberry Banana</h3>
+            <h4>Strawberry Banana</h4>
             <picture>
               <img
                 src="images/strawberry-banana.webp"
                 alt="Strawberry Banana smoothie"
+                loading="lazy"
               />
             </picture>
           </div>
           <div class="drink-card drink8">
-            <h3>Tripleberry</h3>
+            <h4>Tripleberry</h4>
             <picture>
-              <img src="images/tripleberry.webp" alt="Tripleberry smoothie" />
+              <img
+                src="images/tripleberry.webp"
+                alt="Tripleberry smoothie"
+                loading="lazy"
+              />
             </picture>
           </div>
         </section>
@@ -155,18 +170,39 @@
         </button>
       </div>
       <div class="weather">
-        <h2>Weather</h2>
+        <h3>Weather</h3>
         <div class="current-div">
-          <h3>Current Conditions</h3>
-          <section class="currentSec"></section>
+          <h4>Current Conditions</h4>
+          <section class="temp-sec">
+            <picture>
+              <img id="weatherIcon" src="" alt="" />
+            </picture>
+            <p id="temp"></p>
+          </section>
+          <p id="condition"></p>
+          <hr />
+          <p id="wind-speed">Wind Speed: <span id="windSpeed"></span></p>
+          <p id="wind-chill">Wind Chill: <span id="windChill"></span></p>
+          <p id="humidity">Humidity: <span id="humid"></span></p>
         </div>
         <div class="forecast-div">
-          <h3>3-Day Forecast</h3>
-          <section class="forecastSec"></section>
+          <h4>3-Day Forecast</h4>
+          <h5 id="day1"></h5>
+          <p>
+            High: <span id="day1Hi"></span> - Low: <span id="day1Lo"></span>
+          </p>
+          <h5 id="day2"></h5>
+          <p>
+            High: <span id="day2Hi"></span> - Low: <span id="day2Lo"></span>
+          </p>
+          <h5 id="day3"></h5>
+          <p>
+            High: <span id="day3Hi"></span> - Low: <span id="day3Lo"></span>
+          </p>
         </div>
       </div>
       <div class="contact-div">
-        <h2>Contact Info</h2>
+        <h3>Contact Info</h3>
         <p class="contact-blurb">
           Bountiful Foods is a small business specializing in organic, locally
           grown foods. We are physically located in Carlsbad, California,
@@ -192,11 +228,12 @@
       </div>
       <div class="about-area-div">
         <section class="about-area-sec1">
-          <h2>Legoland California</h2>
+          <h4>Legoland California</h4>
           <picture>
             <img
               src="images/legoland.webp"
               alt="Legoland, California enterance"
+              loading="lazy"
             />
           </picture>
           <p>
@@ -215,9 +252,13 @@
           </p>
         </section>
         <section class="about-area-sec2">
-          <h2>Carlsbad State Beach</h2>
+          <h4>Carlsbad State Beach</h4>
           <picture>
-            <img src="images/state-beach.webp" alt="Carlsbad State Beach" />
+            <img
+              src="images/state-beach.webp"
+              alt="Carlsbad State Beach"
+              loading="lazy"
+            />
           </picture>
           <p>
             Carlsbad State Beach is a protected beach in the state park system
@@ -238,11 +279,12 @@
           </p>
         </section>
         <section class="about-area-sec3">
-          <h2>Omni La Costa Resort and Spa</h2>
+          <h4>Omni La Costa Resort and Spa</h4>
           <picture>
             <img
               src="images/omni-la-costa.webp"
               alt="Overlooking a gold course"
+              loading="lazy"
             />
           </picture>
           <p>
@@ -267,9 +309,13 @@
           </p>
         </section>
         <section class="about-area-sec4">
-          <h2>The Flower Fields</h2>
+          <h4>The Flower Fields</h4>
           <picture>
-            <img src="images/flower-fields.webp" alt="Field of flowers" />
+            <img
+              src="images/flower-fields.webp"
+              alt="Field of flowers"
+              loading="lazy"
+            />
           </picture>
           <p>
             The Flower Fields is a flower garden in Carlsbad Ranch in Carlsbad,
@@ -301,7 +347,7 @@
               src="images/bountiful-foods-logo.webp"
               alt="Bountiful Foods Logo" /></picture
         ></a>
-        <h3 class="site-name name-footer">Bountiful Foods</h3>
+        <h4 class="site-name name-footer">Bountiful Foods</h4>
         <p class="footer-address">
           1234 Main Street<br />
           Carlsbad, CA 92008<br />
