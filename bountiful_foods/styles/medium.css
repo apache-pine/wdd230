@@ -190,6 +190,12 @@ form select {
     width: 84%;
 }
 
+/* Start of About Page */
+
+.about-main {
+    max-width: 80%;
+}
+
 
 
 }
