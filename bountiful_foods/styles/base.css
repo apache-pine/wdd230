@@ -218,9 +218,12 @@ nav ul li a.active {
 
 .drink-card img {
     width: 100%;
+    max-width: 140px;
     height: auto;
     object-fit: cover;
     overflow: hidden;
+    display: block;
+    margin: 0 auto;
 }
 
 .drink5, .drink6, .drink7, .drink8 {
@@ -290,7 +293,7 @@ nav ul li a.active {
 }
 
 .weather, .body-social {
-    width: 90%;
+    width: 89%;
     margin: .5rem auto;
 }
 
