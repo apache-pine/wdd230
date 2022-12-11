@@ -176,6 +176,20 @@ nav {
     align-self: center;
 }
 
+/* Start of Fresh Page */
+
+.form-heading {
+    margin-left: 15%;
+}
+
+#drinkOrder {
+    max-width: 80%;
+}
+
+form select {
+    width: 84%;
+}
+
 
 
 }
