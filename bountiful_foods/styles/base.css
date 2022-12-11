@@ -322,6 +322,7 @@ nav ul li a.active {
     color: black;
     font-size: 2rem;
     font-weight: 900;
+    margin: 0;
 }
 
 #condition {
