@@ -1,0 +1,179 @@
+@media only screen and (min-width: 37rem) {
+
+body {
+    font-size: 18px;
+}
+
+.hero-div {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    max-width: 960px;
+}
+
+header {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header-social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+#hamBtn {
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+}
+
+.pop-drinks {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pop-drinks h3 {
+    grid-column: span 3;
+}
+
+.drink5, .drink6 {
+    display: flex;
+}
+
+.contact-div {
+    grid-row: 7 / 8;
+}
+
+.drinks-ordered {
+    width: 95%;
+}
+
+.drinks-ordered p {
+    width: 97%;
+}
+
+.about-area-div {
+    grid-row: 4 / 5;
+}
+.about-area-div h3 {
+    margin-bottom: .5rem;
+}
+
+.about-area-sec {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    background-color: white;
+}
+
+.about-area-sec h4 {
+    grid-column: span 2;
+}
+
+.about-area-sec img {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--accent2-color);
+}
+
+.about-area-sec h4 {
+    width: 80%;
+    border-top: .5rem solid var(--primary-color);
+    border-bottom: .5rem solid var(--primary-color);
+    margin: 0 auto;
+}
+
+.about-area-sec1 h4 {
+    border-top: none;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather h3 {
+    grid-column: span 2;
+}
+
+.weather hr {
+    display: none;
+}
+
+.current-div {
+    margin-bottom: 1rem;
+    margin-right: .5rem;
+}
+
+.forecast-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: .5rem 0 1rem .5rem;
+    background-color: white;
+}
+
+.forecast-div h4 {
+    border-bottom: .5rem solid var(--primary-color);
+    margin-top: 0;
+}
+
+.body-social {
+    display: none;
+}
+
+.footer-site-info {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.footer-site-info .logo-link {
+    grid-row: 1 / 4;
+}
+
+.logo-link picture {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.name-footer {
+    align-self: flex-end;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.footer-address {
+    align-self: center;
+    margin: 0;
+    grid-row: span 2;
+}
+
+.footer-phone {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.footer-loc {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.footer-email {
+    margin: 0;
+    align-self: center;
+}
+
+
+
+}
