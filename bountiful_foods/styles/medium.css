@@ -29,6 +29,10 @@ header {
     font-size: 3rem;
 }
 
+nav {
+    grid-column: 1 / -1;
+}
+
 .pop-drinks {
     width: 95%;
     grid-template-columns: repeat(3, 1fr);
@@ -69,19 +73,16 @@ header {
 
 .about-area-sec h4 {
     grid-column: span 2;
+    width: 80%;
+    border-top: .5rem solid var(--primary-color);
+    border-bottom: .5rem solid var(--primary-color);
+    margin: 0 auto;
 }
 
 .about-area-sec img {
     display: block;
     margin: 0 auto;
     background-color: var(--accent2-color);
-}
-
-.about-area-sec h4 {
-    width: 80%;
-    border-top: .5rem solid var(--primary-color);
-    border-bottom: .5rem solid var(--primary-color);
-    margin: 0 auto;
 }
 
 .about-area-sec1 h4 {
@@ -91,6 +92,7 @@ header {
 .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 95%;
 }
 
 .weather h3 {
