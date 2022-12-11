@@ -18,9 +18,9 @@ const day3Lo = document.querySelector("#day3Lo");
 
 let results = null;
 
-const urlCurrent = "https://api.openweathermap.org/data/2.5/weather?q=carlsbad,ca,usa&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial";
+const urlCurrent = "https://api.openweathermap.org/data/2.5/weather?zip=92008&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial";
 
-const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?q=carlsbad,ca,usa&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial";
+const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?zip=92008&appid=f2cfbb52b6e01d3767725b983a37e017&units=imperial";
 
 
 async function getWeather(url) {
