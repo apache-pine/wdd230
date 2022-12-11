@@ -20,7 +20,7 @@
       <a href="index.html"
         ><picture
           ><img
-            class="logo-header"
+            class="logo logo-header"
             src="images/bountiful-foods-logo.webp"
             alt="Bountiful Foods Logo" /></picture
       ></a>
@@ -58,15 +58,15 @@
       <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
       <nav>
         <ul id="primaryNav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="fresh.html">Fresh</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
       </nav>
     </header>
     <main class="home-main">
-      <div class="hero-headline"><h2>Support locally grown food</h2></div>
       <div class="hero-div">
+        <h2>Support locally grown food</h2>
         <picture>
           <source media="(max-width: 36.9rem)" srcset="images/hero-base.webp" />
           <source
@@ -80,101 +80,99 @@
           />
         </picture>
       </div>
-      <div class="pop-drinks">
+      <div class="pop-drinks def-div">
         <h3>Popular Drinks Designed by Customers</h3>
-        <section class="pop-drinks-sec">
-          <div class="drink-card drink1">
-            <h4>Blackberry Raspberry</h4>
-            <picture>
-              <img
-                src="images/blackberry-raspberry.webp"
-                alt="Blackberry Raspberry smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="drink-card drink2">
-            <h4>Lychee Pomegranate Strawberry</h4>
-            <picture>
-              <img
-                src="images/lychee-pomegrante-strawberry.webp"
-                alt="Lychee Pomegranate Strawberry smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="drink-card drink3">
-            <h4>Mango Orange Apricot</h4>
-            <picture>
-              <img
-                src="images/mango-orange-apricot.webp"
-                alt="Mango Orange Apricot smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="drink-card drink4">
-            <h4>Mango Pineapple</h4>
-            <picture>
-              <img
-                src="images/mango-pineapple.webp"
-                alt="Mango Pineapple smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="drink-card drink5">
-            <h4>Pomegranate Dragonfruit</h4>
-            <picture>
-              <img
-                src="images/pomegranate-dragonfruit.webp"
-                alt="Pomegranate Dragonfruit smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="drink-card drink6">
-            <h4>Strawberry</h4>
-            <picture>
-              <img
-                src="images/strawberry.webp"
-                alt="strawberry smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="drink-card drink7">
-            <h4>Strawberry Banana</h4>
-            <picture>
-              <img
-                src="images/strawberry-banana.webp"
-                alt="Strawberry Banana smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="drink-card drink8">
-            <h4>Tripleberry</h4>
-            <picture>
-              <img
-                src="images/tripleberry.webp"
-                alt="Tripleberry smoothie"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-        </section>
-        <section class="drinks-ordered">
-          <p>
-            You've ordered a total of <span id="drinksOrdered">0</span> drinks.
-            Would you like to order another?
-          </p>
-        </section>
+        <div class="drink-card drink1">
+          <h4>Blackberry Raspberry</h4>
+          <picture>
+            <img
+              src="images/blackberry-raspberry.webp"
+              alt="Blackberry Raspberry smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="drink-card drink2">
+          <h4>Lychee Pomegranate Strawberry</h4>
+          <picture>
+            <img
+              src="images/lychee-pomegrante-strawberry.webp"
+              alt="Lychee Pomegranate Strawberry smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="drink-card drink3">
+          <h4>Mango Orange Apricot</h4>
+          <picture>
+            <img
+              src="images/mango-orange-apricot.webp"
+              alt="Mango Orange Apricot smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="drink-card drink4">
+          <h4>Mango Pineapple</h4>
+          <picture>
+            <img
+              src="images/mango-pineapple.webp"
+              alt="Mango Pineapple smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="drink-card drink5">
+          <h4>Pomegranate Dragonfruit</h4>
+          <picture>
+            <img
+              src="images/pomegranate-dragonfruit.webp"
+              alt="Pomegranate Dragonfruit smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="drink-card drink6">
+          <h4>Strawberry</h4>
+          <picture>
+            <img
+              src="images/strawberry.webp"
+              alt="strawberry smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="drink-card drink7">
+          <h4>Strawberry Banana</h4>
+          <picture>
+            <img
+              src="images/strawberry-banana.webp"
+              alt="Strawberry Banana smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="drink-card drink8">
+          <h4>Tripleberry</h4>
+          <picture>
+            <img
+              src="images/tripleberry.webp"
+              alt="Tripleberry smoothie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="drinks-ordered def-div">
+        <p>
+          You've ordered a total of <span id="drinksOrdered">0</span> drinks.
+          Would you like to order another?
+        </p>
         <button onclick="window.location.href = 'fresh.html';">
           Create Your Own Drink
         </button>
       </div>
-      <div class="weather">
+      <div class="weather def-div">
         <h3>Weather</h3>
         <div class="current-div">
           <h4>Current Conditions</h4>
@@ -185,11 +183,11 @@
             <p id="temp"></p>
           </section>
           <p id="condition"></p>
-          <hr />
           <p id="wind-speed">Wind Speed: <span id="windSpeed"></span></p>
           <p id="wind-chill">Wind Chill: <span id="windChill"></span></p>
           <p id="humidity">Humidity: <span id="humid"></span></p>
         </div>
+        <hr />
         <div class="forecast-div">
           <h4>3-Day Forecast</h4>
           <h5 id="day1"></h5>
@@ -206,7 +204,7 @@
           </p>
         </div>
       </div>
-      <div class="body-social">
+      <div class="body-social def-div">
         <h3>Follow Us On Social Media</h3>
         <a href="https://www.facebook.com/" target="_blank"
           ><img
@@ -237,33 +235,31 @@
             width="32"
         /></a>
       </div>
-      <div class="contact-div">
+      <div class="contact-div def-div">
         <h3>Contact Info</h3>
         <p class="contact-blurb">
           Bountiful Foods is a small business specializing in organic, locally
           grown foods. We are physically located in Carlsbad, California,
           however, we have many food trucks that cover the coastal area from Los
-          Angeles to San Diego.
-        </p>
-        <a
-          class="contact-address"
-          href="https://www.google.com/maps"
-          target="_blank"
-        >
-          1234 Main Street<br />
-          Carlsbad, CA 92008<br />
-        </a>
-        <p class="contact-email">
+          Angeles to San Diego. We are open 7 days a week from 8am to 8pm.
+          <br />
+          <a
+            class="contact-address"
+            href="https://www.google.com/maps"
+            target="_blank"
+          >
+            1234 Main Street<br />
+            Carlsbad, CA 92008</a
+          ><br />
           <a href="mailto:contact@bountiful-foods-ca.com"
             >contact@bountiful-foods-ca.com</a
-          >
-        </p>
-        <p class="contact-phone">
+          ><br />
           <a href="tel:123-456-7890">(123) 456-7890</a>
         </p>
       </div>
-      <div class="about-area-div">
-        <section class="about-area-sec1">
+      <div class="about-area-div def-div">
+        <h3>About the Local Area</h3>
+        <section class="about-area-sec1 about-area-sec">
           <h4>Legoland California</h4>
           <picture>
             <img
@@ -287,7 +283,7 @@
             >)
           </p>
         </section>
-        <section class="about-area-sec2">
+        <section class="about-area-sec2 about-area-sec">
           <h4>Carlsbad State Beach</h4>
           <picture>
             <img
@@ -314,7 +310,7 @@
             >)
           </p>
         </section>
-        <section class="about-area-sec3">
+        <section class="about-area-sec3 about-area-sec">
           <h4>Omni La Costa Resort and Spa</h4>
           <picture>
             <img
@@ -344,7 +340,7 @@
             >)
           </p>
         </section>
-        <section class="about-area-sec4">
+        <section class="about-area-sec4 about-area-sec">
           <h4>The Flower Fields</h4>
           <picture>
             <img
@@ -379,7 +375,7 @@
         <a href="index.html"
           ><picture
             ><img
-              class="logo-footer"
+              class="logo logo-footer"
               src="images/bountiful-foods-logo.webp"
               alt="Bountiful Foods Logo" /></picture
         ></a>
